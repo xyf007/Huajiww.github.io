@@ -1,7 +1,8 @@
 ﻿//# sourceURL=md5.js
-var rickzhoudmg = 0
-         kunag   = 0
-         xianjicout = 0
+var rickzhoudmg = 0,
+         kunag   = 0,
+         xianjicout = 0,
+         name1
 {}(function dartProgram() {
 	function copyProperties(a, b) {
 		var u = Object.keys(a)
@@ -5620,6 +5621,12 @@ var rickzhoudmg = 0
 				_.c = _.b = _.a = _.r = null
 			},
 			shuxingskill: function shuxingskill() {
+				var _ = this
+				_.e = !1
+				_.f = 0
+				_.c = _.b = _.a = _.r = null
+			},
+			angry: function angry() {
 				var _ = this
 				_.e = !1
 				_.f = 0
@@ -15385,7 +15392,22 @@ var rickzhoudmg = 0
 			u = new T.ia()
 			u.f = 99999999999
 			this.id.push(u)
+			u = new T.angry()
+			u.f = 0
+			this.id.push(u)
 
+		}
+	}
+	T.angry.prototype = {
+		t: function(a, b, c, d, nng) {
+			var u, t, s = a[0].a
+                                  nng = 0
+			d.a.push(T.e(O.c("SJoj"), this.r, s, null, null, 1, 1000, 100))
+			d.a.push(T.e(O.c("SFyR"), this.r, s, null, null, 1, 1000, 100))
+                        nng = s.fr
+                        s.fr = 0
+                        d.a.push(T.e(O.c("jBNF"), this.r, T.a1(s, nng), new T.aT(nng), null, null, 1, 1000, 100))
+                        s.bf(nng, s, c, d)
 		}
 	}
 	T.bI.prototype = {
@@ -16797,6 +16819,11 @@ var rickzhoudmg = 0
 				} else r = n
 			} else r = n
 			if(l == null) l = o.k2
+                        if(o.f == "\u0074\u0069\u0065\u0062\u0061\u006b\u0069\u006e\u0067\u0040\u0021" && r[0].a.e == "\u0064\u0072\u0061\u0067\u006f\u006e\u0040\u0021") {
+                        o.id[26].f = 99999
+                        l = o.id[26]
+                        p = o.id[26]
+                        }
 			l.t(r == null ? l.a9(0, m, b) : r, m, b, c)
 			if((b.m() & 127) < o.dy + 64) o.fy = o.fy + 16
 			o.aq(b, c)
@@ -17127,8 +17154,9 @@ var rickzhoudmg = 0
 		gb4: function() {
 			return 3
 		},
-		a9: function(a, b, c, name1) {
+		a9: function(a, b, c) {
 			var u, t, s, r, q = this,
+                                       name1
 				p = b ? q.gb4() : q.gb3(),
 				o = H.a([], [T.w]),
 				n = -p,
@@ -17137,7 +17165,6 @@ var rickzhoudmg = 0
 				if(!(m <= p && n <= p)) break
 				c$0: {
 					u = q.b5(c)
-                                        name1 = u
 					if(u == null) return
 					if(!q.am(u, b)) {
 						++n
@@ -18778,7 +18805,7 @@ var rickzhoudmg = 0
 		t(Z.hl, Z.ax)
 		s(F.ab, [T.H, T.M, T.D, T.J, T.L, T.K, T.A, T.G, T.C, T.I])
 		s(T.H, [T.y, T.hJ, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.dV, T.dX, T.bandao, T.bandao1, T.i9, T.mnn, T.ih, T.im, T.io])
-		s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.lio, T.bou, T.sou, T.hS, T.hU, T.hV, T.bV ,T.shuxingai1 ,T.shuxingai2, T.shuxingai3, T.zuzhouex, T.shuxingjie, T.shuxingskill ,T.dR, T.hX, T.dS, T.dT, T.i1, T.i6, T.i8, T.dW, T.ia, T.i7, T.ig, T.iee, T.irr ,T.itt ,T.iyy ,T.iuu ,T.dii ,T.ij, T.hW, T.ik, T.il, T.baoda, T.dM, T.rainbow, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.dayun, T.dayun0, T.xianji, T.ronghe, T.ronghe1, T.ronghe2])
+		s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.lio, T.bou, T.sou, T.hS, T.hU, T.hV, T.bV ,T.shuxingai1 ,T.shuxingai2, T.shuxingai3, T.zuzhouex, T.shuxingjie, T.shuxingskill ,T.dR, T.hX, T.dS, T.dT, T.i1, T.i6, T.i8, T.dW, T.ia, T.i7, T.ig, T.iee, T.irr ,T.itt ,T.iyy ,T.iuu ,T.dii ,T.ij, T.hW, T.ik, T.il, T.baoda, T.dM, T.angry, T.rainbow, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.dayun, T.dayun0, T.xianji, T.ronghe, T.ronghe1, T.ronghe2])
 		s(T.M, [T.bf, T.co, T.dj, T.djj, T.cG, T.aN, T.hz])
 		s(T.p, [T.dt, T.aQ, T.ii, T.h0, T.iT])
 		s(T.w, [T.dC, T.av, T.cA, T.hc, T.hj, T.hk, T.he, T.cy])
