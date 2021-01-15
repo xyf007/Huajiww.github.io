@@ -1,4 +1,4 @@
-var stk;
+﻿var stk;
 var is = 0;
 var res = "";
 
@@ -49,7 +49,7 @@ function chk() {
             res += cw()
                 .document.querySelectorAll("span.u")[loc].textContent.split(" ")[2] + " \n";
             is = 0;
-            if(res!="undefined 3330 \n"){localStorage.result+=res}
+            if(res!="undefined undefined \n"){localStorage.result+=res}
         }
     }
 }
