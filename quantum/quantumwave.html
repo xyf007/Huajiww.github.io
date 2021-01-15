@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>量子波动</title> 
+</head> 
+<body>
+<h3>量子波动</h3>
+<p>by 贩钻石剑</p>
+<strong>划重点：非随机模式需不同开需改变前缀后缀，否则会测重！</strong>
+<p>设置</p>
+<p><textarea style="resize:none;" id="cs" placeholder="设置" rows="8" cols="75">
+window.cur=0;
+m=function () {
+window.cur++;
+return "前缀"+cur+"后缀"+'@'+"战队"
+}
+</textarea>
+<p>加开次数决定开数<p>
+<p>
+<button onclick="addfr()">加开</button>
+<button onclick="vr()">显示结果</button>
+<button onclick="clr()">清除历史</button>
+<p>
+<p>
+<button onclick="pf()">开启评分</button>
+<button onclick="vp()">显示评分</button>
+<p>
+<p><textarea style="resize:none;" id="output" placeholder="搜索结果" rows="25" cols="75"></textarea></p>
+<script type="text/javascript">
+function addfr()
+{
+var fr = document.createElement('iframe'); 
+fr.src="idminer.html";  
+fr.hidden=true;
+document.body.appendChild(fr);
+setTimeout(qd,5000);
+}
+window.addEventListener("message",rec,false);
+function rec(event)
+{
+localStorage.elite+=(event.data+"\n");
+}
+function qd()
+{
+var cs = document.getElementById('cs').value;
+document.getElementsByTagName('iframe')[document.getElementsByTagName('iframe').length-1].contentWindow.postMessage(cs,"*");
+}
+function clr(){
+if(confirm("确认清除所有历史记录？")){localStorage.elite="";localStorage.result=""}
+}
+function vr() {
+if(localStorage.elite!=""){document.getElementById('output').value=localStorage.elite}else{document.getElementById('output').value="空空如也"}
+}
+function pf(){
+var fr = document.createElement('iframe'); 
+fr.src="benchmark.html";  
+fr.hidden=true;
+document.body.appendChild(fr);
+}
+function vp() {
+if(localStorage.result!=""){document.getElementById('output').value=localStorage.result}else{document.getElementById('output').value="空空如也"}
+}
+if(localStorage.elite==undefined){localStorage.elite=""}
+if(localStorage.result==undefined){localStorage.result=""}
+</script>
+</body>
+</html>
