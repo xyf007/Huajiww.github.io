@@ -2,7 +2,10 @@
 var rickzhoudmg = 0,
          kunag   = 0,
          xianjicout = 0,
-         name1
+         name1,
+         atk,
+        rickzhoudef = 0
+        rickzhouspe = 0
 {}(function dartProgram() {
 	function copyProperties(a, b) {
 		var u = Object.keys(a)
@@ -16804,6 +16807,14 @@ var rickzhoudmg = 0,
 				m = (b.m() & 63) < o.dy,
 				l = o.fe(m, b, c)
 			if(o.A) return
+                                if(rickzhouspe == 1) {
+                                for(iopp = 0; iopp < o.x.a.a.length; iopp++) {
+                                if(o.x.a.a[iopp].c[0].e == atk) {
+                                o = o.x.a.a[iopp].c[0]
+                                break 
+                                 }
+                                }
+                               }
 			if(l == null) {
 				u = (b.m() & 15) + 8
 				if(o.fy >= u) {
@@ -16820,7 +16831,8 @@ var rickzhoudmg = 0,
 			} else r = n
 			if(l == null) l = o.k2
                         name1 = l.a9(0, m, b)
-                        if(name1.length == 0) {
+                        if(name1 == undefined) {
+                        } else if(name1.length == 0) {
                         } else {
                         if(o.e == "\u0074\u0069\u0065\u0062\u0061\u006b\u0069\u006e\u0067\u0040\u0021" && name1[0].a.e == "\u0064\u0072\u0061\u0067\u006f\u006e\u0040\u0021") {
                         o.id[26].f = 99999
@@ -16903,8 +16915,10 @@ var rickzhoudmg = 0,
 		},
 		aA: function(a, b, c, d, e) {
 			var u, t, s, r, q, p = this
-                        if(rickzhoudmg == 1 && b.r == "\u0052\u0069\u006e\u0069\u0063\u006b") {
+                        if(rickzhoudmg == 1 && b.e == atk) {
                         a +=  30000
+                        } else if(rickzhoudef == 1 && p.e == atk) {
+                        a =  0
                         }
 			if(a < 0) {
 				u = p.fr
@@ -18071,39 +18085,41 @@ var rickzhoudmg = 0,
 			var u, t, s = a[0].a
 			d.a.push(T.e(O.c("MqUK"), this.r, this.r, null, null, 1, 1000, 100))
                         rickzhoudmg = 1
-                        this.r.cx = 351
-                        this.r.id[29].f = 16
+                        rickzhouspe = 0
+                        rickzhoudef = 0
 			d.a.push(T.e(O.c("WxRA"), this.r, this.r, null, null, 1, 1000, 1000))
                         this.r.id[42].f = 0
                         this.r.id[43].f = 24
                         this.r.id[44].f = 20
+                        atk = this.r.e
 		}
 	}
 	T.shuxingai2.prototype = {
 		t: function(a, b, c, d) {
 			var u, t, s = a[0].a
 			d.a.push(T.e(O.c("MqUK"), this.r, this.r, null, null, 1, 1000, 100))
-                        this.r.cx = 99999999999999999999999999999999999999999999999
-                        this.r.u[2] = 99999999999999999999999999999999999999999999999
+                        rickzhouspe = 1
                         rickzhoudmg = 0
-                        this.r.id[29].f = 16
+                        rickzhoudef = 0
 			d.a.push(T.e(O.c("ETBW"), this.r, this.r, null, null, 1, 1000, 1000))
                         this.r.id[43].f = 0
                         this.r.id[42].f = 18
                         this.r.id[44].f = 20
+                        atk = this.r.e
 		}
 	}
 	T.shuxingai3.prototype = {
 		t: function(a, b, c, d) {
 			var u, t, s = a[0].a
 			d.a.push(T.e(O.c("MqUK"), this.r, this.r, null, null, 1, 1000, 100))
-                        this.r.cx = 351
-                        this.r.id[29].f = 999999999999999999999
+                        rickzhouspe = 0
+                        rickzhoudef = 1
                         rickzhoudmg = 0
 			d.a.push(T.e(O.c("nhoH"), this.r, this.r, null, null, 1, 1000, 1000))
                         this.r.id[44].f = 0
                         this.r.id[42].f = 18
                         this.r.id[43].f = 24
+                        atk = this.r.e
 		}
 	}
 	T.shuxingjie.prototype = {
