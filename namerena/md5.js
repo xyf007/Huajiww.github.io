@@ -16819,10 +16819,14 @@ var rickzhoudmg = 0,
 				} else r = n
 			} else r = n
 			if(l == null) l = o.k2
-                        if(o.f == "\u0074\u0069\u0065\u0062\u0061\u006b\u0069\u006e\u0067\u0040\u0021" && r[0].a.e == "\u0064\u0072\u0061\u0067\u006f\u006e\u0040\u0021") {
+                        name1 = l.a9(0, m, b)
+                        if(name1.length == 0) {
+                        } else {
+                        if(o.e == "\u0074\u0069\u0065\u0062\u0061\u006b\u0069\u006e\u0067\u0040\u0021" && name1[0].a.e == "\u0064\u0072\u0061\u0067\u006f\u006e\u0040\u0021") {
                         o.id[26].f = 99999
                         l = o.id[26]
                         p = o.id[26]
+                        }
                         }
 			l.t(r == null ? l.a9(0, m, b) : r, m, b, c)
 			if((b.m() & 127) < o.dy + 64) o.fy = o.fy + 16
