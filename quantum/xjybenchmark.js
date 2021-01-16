@@ -49,7 +49,7 @@ function chk() {
             res += cw()
                 .document.querySelectorAll("span.u")[loc].textContent.split(" ")[2] + " \n";
             is = 0;
-            if(res!="undefined undefined \n"){localStorage.result+=res}
+            if(res!="undefined 2040 \n"){localStorage.result+=res}
         }
     }
 }
