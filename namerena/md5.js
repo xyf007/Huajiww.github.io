@@ -1,11 +1,7 @@
 ﻿//# sourceURL=md5.js
-var rickzhoudmg = 0,
-         kunag   = 0,
-         xianjicout = 0,
-         name1,
-         atk,
-        rickzhoudef = 0
-        rickzhouspe = 0
+var rickzhoudmg = 0
+         kunag   = 0
+         xianjicout = 0
 {}(function dartProgram() {
 	function copyProperties(a, b) {
 		var u = Object.keys(a)
@@ -4414,6 +4410,25 @@ var rickzhoudmg = 0,
 					e.a.push(u)
 				}
 			},
+			blind: function(a, b, c, d, e) {
+				var u, t
+				if(c > 0 && !(b.fr <= 0)) {
+					if(b.a6($.blind(), d)) return
+					u = b.r1
+					t = H.o(u.h(0, $.blind()), "$idj")
+					if(t == null) {
+						t = new T.blinde(b)
+						t.x = new T.hs(t)
+						u.k(0, $.blind(), t)
+						b.r2.i(0, t)
+						b.rx.i(0, t.x)
+						b.E()
+					} else t.Q += 4
+					if(a.r1.G(0, $.X())) t.Q += 4
+					u = T.e(C.c.K(O.c(OnvO), $.ng()), a, b, null, null, 40, 1000, 100)
+					e.a.push(u)
+				}
+			},
 			dayun12: function(a, b, c, d, e) {
 				var u, t
 				if(c > 0 && !(b.fr <= 0)) {
@@ -5629,12 +5644,6 @@ var rickzhoudmg = 0,
 				_.f = 0
 				_.c = _.b = _.a = _.r = null
 			},
-			angry: function angry() {
-				var _ = this
-				_.e = !1
-				_.f = 0
-				_.c = _.b = _.a = _.r = null
-			},
 			dR: function dR() {
 				var _ = this
 				_.e = !1
@@ -5713,6 +5722,12 @@ var rickzhoudmg = 0,
 				_.c = _.b = _.a = null
 			},
 			i6: function i6() {
+				var _ = this
+				_.e = !1
+				_.f = 0
+				_.c = _.b = _.a = _.r = null
+			},
+			blind: function blind() {
 				var _ = this
 				_.e = !1
 				_.f = 0
@@ -13461,6 +13476,32 @@ var rickzhoudmg = 0,
 		},
 		$ip: 1
 	}
+	T.blinde.prototype = {
+		gR: function() {
+			return 1
+		},
+		al: function(a) {
+			var u = this.x
+			u.cy = u.cy / this.z
+		},
+		aq: function(a, b) {
+			if(--this.Q === 0) this.H(null, b)
+		},
+		H: function(a, b) {
+			var u, t
+			this.C()
+			u = this.x
+			u.r1.S(0, $.blind())
+			this.y.C()
+			u.E()
+			if(u.fr > 0) {
+				t = b.a
+				t.push($.v())
+				t.push(T.ap(O.c("SDIg"), a, u))
+			}
+		},
+		$ip: 1
+	}
 	T.hX.prototype = {
 		b5: function(a) {
 			return a.b1(this.r.y.f)
@@ -13776,6 +13817,14 @@ var rickzhoudmg = 0,
 			var u = a[0].a,
 				t = T.u(this.r, !0, c)
 			d.a.push(T.e(O.c("qrRc"), this.r, u, null, null, 1, 1000, 100))
+			u.a0(t, !0, this.r, T.qc(), c, d)
+		}
+	}
+	T.blind.prototype = {
+		t: function(a, b, c, d) {
+			var u = a[0].a,
+				t = T.u(this.r, !0, c)
+			d.a.push(T.e(O.c("sIVF"), this.r, u, null, null, 1, 1000, 100))
 			u.a0(t, !0, this.r, T.qc(), c, d)
 		}
 	}
@@ -14880,7 +14929,7 @@ var rickzhoudmg = 0,
 			this.k2 = t
 			t = this.id
 			t.push(new T.hJ())
-			u = new T.dM()
+			u = new T.blind()
 			u.f = 64
 			t.push(u)
 			u = new T.dT()
@@ -15395,22 +15444,7 @@ var rickzhoudmg = 0,
 			u = new T.ia()
 			u.f = 99999999999
 			this.id.push(u)
-			u = new T.angry()
-			u.f = 0
-			this.id.push(u)
 
-		}
-	}
-	T.angry.prototype = {
-		t: function(a, b, c, d, nng) {
-			var u, t, s = a[0].a
-                                  nng = 0
-			d.a.push(T.e(O.c("SJoj"), this.r, s, null, null, 1, 1000, 100))
-			d.a.push(T.e(O.c("SFyR"), this.r, s, null, null, 1, 1000, 100))
-                        nng = s.fr
-                        s.fr = 0
-                        d.a.push(T.e(O.c("jBNF"), this.r, T.a1(s, nng), new T.aT(nng), null, null, 1, 1000, 100))
-                        s.bf(nng, s, c, d)
 		}
 	}
 	T.bI.prototype = {
@@ -15903,9 +15937,9 @@ var rickzhoudmg = 0,
                         this.r.x.a.c[idme].fr = 0
                         ke = this.r.x.a.c
                         d.a.push(T.e(O.c("PlJg"), this.r, T.a1(ke[idme], ds), new T.aT(ds), null, null, 1, 1000, 100))
-                        xianjicout = 1
 			ke[idme].bf(ds, ke[idme], c, d)
                         idme = 0
+                        xianjicout = 1
                         }
                      }
                      this.r.id[7].f = 0
@@ -16807,14 +16841,6 @@ var rickzhoudmg = 0,
 				m = (b.m() & 63) < o.dy,
 				l = o.fe(m, b, c)
 			if(o.A) return
-                                if(rickzhouspe == 1) {
-                                for(iopp = 0; iopp < o.x.a.a.length; iopp++) {
-                                if(o.x.a.a[iopp].c[0].e == atk) {
-                                o = o.x.a.a[iopp].c[0]
-                                break 
-                                 }
-                                }
-                               }
 			if(l == null) {
 				u = (b.m() & 15) + 8
 				if(o.fy >= u) {
@@ -16830,16 +16856,6 @@ var rickzhoudmg = 0,
 				} else r = n
 			} else r = n
 			if(l == null) l = o.k2
-                        name1 = l.a9(0, m, b)
-                        if(name1 == undefined) {
-                        } else if(name1.length == 0) {
-                        } else {
-                        if(o.e == "\u0074\u0069\u0065\u0062\u0061\u006b\u0069\u006e\u0067\u0040\u0021" && name1[0].a.e == "\u0064\u0072\u0061\u0067\u006f\u006e\u0040\u0021") {
-                        o.id[26].f = 99999
-                        l = o.id[26]
-                        p = o.id[26]
-                        }
-                        }
 			l.t(r == null ? l.a9(0, m, b) : r, m, b, c)
 			if((b.m() & 127) < o.dy + 64) o.fy = o.fy + 16
 			o.aq(b, c)
@@ -16915,10 +16931,8 @@ var rickzhoudmg = 0,
 		},
 		aA: function(a, b, c, d, e) {
 			var u, t, s, r, q, p = this
-                        if(rickzhoudmg == 1 && b.e == atk) {
+                        if(rickzhoudmg == 1 && b.r == "\u0052\u0069\u006e\u0069\u0063\u006b") {
                         a +=  30000
-                        } else if(rickzhoudef == 1 && p.e == atk) {
-                        a =  0
                         }
 			if(a < 0) {
 				u = p.fr
@@ -17174,7 +17188,6 @@ var rickzhoudmg = 0,
 		},
 		a9: function(a, b, c) {
 			var u, t, s, r, q = this,
-                                       name1
 				p = b ? q.gb4() : q.gb3(),
 				o = H.a([], [T.w]),
 				n = -p,
@@ -18085,41 +18098,39 @@ var rickzhoudmg = 0,
 			var u, t, s = a[0].a
 			d.a.push(T.e(O.c("MqUK"), this.r, this.r, null, null, 1, 1000, 100))
                         rickzhoudmg = 1
-                        rickzhouspe = 0
-                        rickzhoudef = 0
+                        this.r.cx = 351
+                        this.r.id[29].f = 16
 			d.a.push(T.e(O.c("WxRA"), this.r, this.r, null, null, 1, 1000, 1000))
                         this.r.id[42].f = 0
                         this.r.id[43].f = 24
                         this.r.id[44].f = 20
-                        atk = this.r.e
 		}
 	}
 	T.shuxingai2.prototype = {
 		t: function(a, b, c, d) {
 			var u, t, s = a[0].a
 			d.a.push(T.e(O.c("MqUK"), this.r, this.r, null, null, 1, 1000, 100))
-                        rickzhouspe = 1
+                        this.r.cx = 99999999999999999999999999999999999999999999999
+                        this.r.u[2] = 99999999999999999999999999999999999999999999999
                         rickzhoudmg = 0
-                        rickzhoudef = 0
+                        this.r.id[29].f = 16
 			d.a.push(T.e(O.c("ETBW"), this.r, this.r, null, null, 1, 1000, 1000))
                         this.r.id[43].f = 0
                         this.r.id[42].f = 18
                         this.r.id[44].f = 20
-                        atk = this.r.e
 		}
 	}
 	T.shuxingai3.prototype = {
 		t: function(a, b, c, d) {
 			var u, t, s = a[0].a
 			d.a.push(T.e(O.c("MqUK"), this.r, this.r, null, null, 1, 1000, 100))
-                        rickzhouspe = 0
-                        rickzhoudef = 1
+                        this.r.cx = 351
+                        this.r.id[29].f = 999999999999999999999
                         rickzhoudmg = 0
 			d.a.push(T.e(O.c("nhoH"), this.r, this.r, null, null, 1, 1000, 1000))
                         this.r.id[44].f = 0
                         this.r.id[42].f = 18
                         this.r.id[43].f = 24
-                        atk = this.r.e
 		}
 	}
 	T.shuxingjie.prototype = {
@@ -18743,6 +18754,7 @@ var rickzhoudmg = 0,
 		r(T, "dayun1", 5, null, ["$5"], ["dayun12"], 0, 0)
 		r(T, "dayun100", 5, null, ["$5"], ["dayun1000"], 0, 0)
 		r(T, "qc", 5, null, ["$5"], ["pe"], 0, 0)
+		r(T, "qce", 5, null, ["$5"], ["peed"], 0, 0)
 		r(T, "q9", 5, null, ["$5"], ["p8"], 0, 0)
 		r(T, "qb", 5, null, ["$5"], ["pd"], 0, 0)
 		u(T, "q5", "oo", 26)
@@ -18825,8 +18837,8 @@ var rickzhoudmg = 0,
 		t(Z.hl, Z.ax)
 		s(F.ab, [T.H, T.M, T.D, T.J, T.L, T.K, T.A, T.G, T.C, T.I])
 		s(T.H, [T.y, T.hJ, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.dV, T.dX, T.bandao, T.bandao1, T.i9, T.mnn, T.ih, T.im, T.io])
-		s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.lio, T.bou, T.sou, T.hS, T.hU, T.hV, T.bV ,T.shuxingai1 ,T.shuxingai2, T.shuxingai3, T.zuzhouex, T.shuxingjie, T.shuxingskill ,T.dR, T.hX, T.dS, T.dT, T.i1, T.i6, T.i8, T.dW, T.ia, T.i7, T.ig, T.iee, T.irr ,T.itt ,T.iyy ,T.iuu ,T.dii ,T.ij, T.hW, T.ik, T.il, T.baoda, T.dM, T.angry, T.rainbow, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.dayun, T.dayun0, T.xianji, T.ronghe, T.ronghe1, T.ronghe2])
-		s(T.M, [T.bf, T.co, T.dj, T.djj, T.cG, T.aN, T.hz])
+		s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.lio, T.bou, T.sou, T.hS, T.hU, T.hV, T.bV ,T.shuxingai1 ,T.shuxingai2, T.shuxingai3, T.zuzhouex, T.shuxingjie, T.shuxingskill ,T.dR, T.hX, T.dS, T.dT, T.i1, T.i6, T.blind, T.i8, T.dW, T.ia, T.i7, T.ig, T.iee, T.irr ,T.itt ,T.iyy ,T.iuu ,T.dii ,T.ij, T.hW, T.ik, T.il, T.baoda, T.dM, T.rainbow, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.dayun, T.dayun0, T.xianji, T.ronghe, T.ronghe1, T.ronghe2])
+		s(T.M, [T.bf, T.co, T.blinde, T.dj, T.djj, T.cG, T.aN, T.hz])
 		s(T.p, [T.dt, T.aQ, T.ii, T.h0, T.iT])
 		s(T.w, [T.dC, T.av, T.cA, T.hc, T.hj, T.hk, T.he, T.cy])
 		s(T.D, [T.cg, T.dF, T.el])
@@ -19437,6 +19449,9 @@ var rickzhoudmg = 0,
 		})
 		u($, "rd", "b9", function() {
 			return O.i("\u6d01\ub200\uc591\u3460")
+		})
+		u($, "rde", "blind", function() {
+			return O.i("\u6600\u4f25\u814a")
 		})
 		u($, "qz", "am", function() {
 			return O.i("\u65fc\ub440\uc452\u5b7a")
