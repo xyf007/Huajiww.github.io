@@ -4757,6 +4757,28 @@ H.ce(m,m,m,m).constructor.prototype)
                 e.a.push(u)
             }
         },
+        iced: function(a, b, c, d, e) {
+            var u, t
+            if (c > 0 && !(b.fr <= 0)) {
+                if (b.a6($.b8(), d))
+                    return
+                u = b.r1
+                t = H.o(u.h(0, $.b8()), "$idj")
+                if (t == null) {
+                    t = new T.ice1(b)
+                    t.x = new T.hs(t)
+                    u.k(0, $.b8(), t)
+                    b.r2.i(0, t)
+                    b.rx.i(0, t.x)
+                    b.E()
+                } else
+                    t.y += 4096
+                if (a.r1.G(0, $.X()))
+                    t.y += 8192
+                u = T.e(C.c.K(O.c("lZqU"), $.ng()), a, b, null, null, 40, 1000, 100)
+                e.a.push(u)
+            }
+        },
         blind3: function(a, b, c, d, e) {
             var u, t, tj
             if (c > 0 && !(b.fr <= 0)) {
@@ -4848,6 +4870,26 @@ H.ce(m,m,m,m).constructor.prototype)
                     t.r = a
                 }
                 e.a.push(T.e(C.c.K(O.c("UAjR"), $.ni()), a, b, null, null, 60, 1000, 100))
+            }
+        },
+        fired: function(a, b, c, d, e) {
+            var u, t
+            if (c > 4 && !(b.fr <= 0)) {
+                if (b.a6($.b9(), d))
+                    return
+                u = b.r1
+                t = H.o(u.h(0, $.b9()), "$idE")
+                if (t == null) {
+                    t = new T.fire1(a,b)
+                    t.y = T.u(a, !0, d) * 1.2
+                    u.k(0, $.b9(), t)
+                    b.x1.i(0, t)
+                } else {
+                    t.y = t.y + T.u(a, !0, d) * 1.2
+                    t.z = 4
+                    t.r = a
+                }
+                e.a.push(T.e(O.c("OisL"), a, b, null, null, 60, 1000, 100))
             }
         },
         u: function(a, b, c) {
@@ -6081,6 +6123,13 @@ H.ce(m,m,m,m).constructor.prototype)
             _.y = 1024
             _.c = _.b = _.a = null
         },
+        ice1: function ice1(a) {
+            var _ = this
+            _.r = a
+            _.x = null
+            _.y = 4096
+            _.c = _.b = _.a = null
+        },
         djj: function djj(a) {
             var _ = this
             _.r = a
@@ -6123,6 +6172,14 @@ H.ce(m,m,m,m).constructor.prototype)
             _.z = 4
             _.c = _.b = _.a = null
         },
+        fire1: function fire1(a, b) {
+            var _ = this
+            _.r = a
+            _.x = b
+            _.y = null
+            _.z = 4
+            _.c = _.b = _.a = null
+        },
         i6: function i6() {
             var _ = this
             _.e = !1
@@ -6130,6 +6187,18 @@ H.ce(m,m,m,m).constructor.prototype)
             _.c = _.b = _.a = _.r = null
         },
         blind4: function blind4() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        firehand: function firehand() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        icesword: function icesword() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -7379,7 +7448,7 @@ H.ce(m,m,m,m).constructor.prototype)
         aG: function aG(a) {
             this.a = a
         },
-        aw: function aw(a, b, c, d, e, f, g, h) {
+        aw: function aw(a, b, c, d, e, f, g, h, i) {
             var _ = this
             _.a = a
             _.b = b
@@ -7389,6 +7458,7 @@ H.ce(m,m,m,m).constructor.prototype)
             _.f = f
             _.r = g
             _.x = h
+            _.xe = i
         },
         dJ: function dJ(a, b, c, d, e, f, g, h) {
             var _ = this
@@ -13459,7 +13529,7 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             else if (s === "[2]")
                 return t.a.$1(t.b.x)
             else if (s === "[3]")
-                return t.a.$1(t.b.x)
+                return t.a.$1(t.b.xe)
             else {
                 u = J.al(s)
                 if (!!t.b.$idJ)
@@ -14278,7 +14348,11 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             u = T.u(this.r, !0, c)
             t = r.b
             d.a.push(T.e(O.c("iksa"), this.r, s, null, null, 1, 1000, 100))
+            if(firenum == 1 && s.e == "\u0061\u006f\u006b\u0069\u006a\u0069\u007a\u0040\u0021" ) {
+            s.a0(u * (1.5 + t), !0, this.r, T.fire(), c, d)
+            } else {
             s.a0(u * (1.5 + t), !0, this.r, T.mC(), c, d)
+            }
         }
     }
     T.zuzhouex.prototype = {
@@ -14367,8 +14441,8 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
         },
         al: function(a) {
             var u = this.x
-                kj = u.id[10]
-                op = u.id[8]
+                kj = u.id[11]
+                op = u.id[9]
             u.go = 2
             kj.f = 1000
             op.f = 0
@@ -14401,7 +14475,7 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
         },
         al: function(a) {
             var u = this.x
-                kj = u.id[9]
+                kj = u.id[10]
             u.cx = 9999
             kj.f = 0
         },
@@ -14590,6 +14664,42 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
         },
         $ip: 1
     }
+    T.ice1.prototype = {
+        gR: function() {
+            return -1
+        },
+        al: function(a) {
+            a.A = !0
+        },
+        ff: function(a, b, c) {
+            var u, t = this
+            if (a > 0) {
+                u = t.y
+                if (u > 0) {
+                    t.y = u - a
+                    return 0
+                } else if (a + t.r.j >= 8192) {
+                    t.H(null, c)
+                    return 0
+                }
+            }
+            return a
+        },
+        H: function(a, b) {
+            var u, t
+            this.C()
+            u = this.r
+            u.r1.S(0, $.b8())
+            this.x.C()
+            u.E()
+            if (u.fr > 0) {
+                t = b.a
+                t.push($.v())
+                t.push(T.ap(O.c("yICz"), a, u))
+            }
+        },
+        $ip: 1
+    }
     T.djj.prototype = {
         gR: function() {
             return -1
@@ -14635,7 +14745,11 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             var u = a[0].a
               , t = T.u(this.r, !0, c)
             d.a.push(T.e(O.c("qctf"), this.r, u, null, null, 1, 1000, 100))
+            if(icenum == 1 && this.r.e =="\u0061\u006f\u006b\u0069\u006a\u0069\u007a\u0040\u0021") {
+            u.a0(t * 1, !0, this.r, T.ice(), c, d)
+            } else {
             u.a0(t * 0.7, !0, this.r, T.kV(), c, d)
+            }
         }
     }
     T.dayun.prototype = {
@@ -14775,6 +14889,36 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
                 u = b.a
                 u.push($.v())
                 u.push(T.ap(O.c("RMys"), a, t))
+            }
+        },
+        $ip: 1
+    }
+    T.fire1.prototype = {
+        gR: function() {
+            return -1
+        },
+        aq: function(a, b) {
+            var u, t, s, r, q = this, p = q.x
+            if (p.fr > 0) {
+                u = q.y
+                t = q.z
+                s = u * (1 + (t - 1) * 0.1) / t
+                q.y = u - s
+                r = C.e.Z(s / (p.db + 64))
+                b.a.push(T.e(O.c("KoLi"), q.r, p, null, null, 0, 1000, 100))
+                p.aA(r * 2, q.r, T.a3(), a, b)
+                if (--q.z === 0)
+                    q.H(null, b)
+            }
+        },
+        H: function(a, b) {
+            var u, t = this.x
+            t.r1.S(0, $.b9())
+            this.C()
+            if (t.fr > 0) {
+                u = b.a
+                u.push($.v())
+                u.push(T.ap(O.c("WgNA"), a, t))
             }
         },
         $ip: 1
@@ -15967,14 +16111,17 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             u = new T.blind2()
             u.f = 32
             t.push(u)
+            u = new T.icesword()
+            u.f = 32
+            t.push(u)
             u = new T.dT()
-            u.f = 16
+            u.f = 20
             t.push(u)
             u = new T.bV()
-            u.f = 16
+            u.f = 20
             t.push(u)
             u = new T.blind4()
-            u.f = 16
+            u.f = 20
             t.push(u)
             u = new T.baqi0()
             u.f = 32
@@ -15984,6 +16131,9 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             t.push(u)
             u = new T.ih()
             u.f = 0
+            t.push(u)
+            u = new T.firehand()
+            u.f = 1024
             t.push(u)
         }
     }
@@ -16023,6 +16173,27 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             u.a0(t, !0, this.r, T.blinde(), c, d)
         }
     }
+    T.firehand.prototype = {
+        t: function(a, b, c, d) {
+            var u = a[0].a
+              , t = T.u(this.r, !0, c)
+            d.a.push(T.e(O.c("qStj"), this.r, u, null, null, 1, 1000, 100))
+            firenum = 1
+            this.r.id[12].f = 0
+            d.a.push(T.e(O.c("bfmE"), this.r, u, null, null, 0, 1000, 100))
+        }
+    }
+    T.icesword.prototype = {
+        t: function(a, b, c, d) {
+            var u = a[0].a
+              , t = T.u(this.r, !0, c)
+            d.a.push(T.e(O.c("bZRq"), this.r, this.r, null, null, 1, 1000, 100))
+            icenum = 1
+            this.r.id[5].f = 0
+            this.r.id[2].f = 32
+            d.a.push(T.e(O.c("CJZY"), this.r, this.r, null, null, 0, 1000, 100))
+        }
+    }
     T.dM.prototype = {
         gb3: function() {
             return 5
@@ -16044,7 +16215,11 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
                 o = n[u]
                 if (o.fr > 0) {
                     q.push($.v())
+                    if(icenum == 1 && s.e == "\u0061\u006f\u006b\u0069\u006a\u0069\u007a\u0040\u0021" ) {
+                    o.a0(p, !0, this.r, T.ice(), c, d)
+                    } else {
                     o.a0(p, !0, this.r, T.kV(), c, d)
+                   }
                 }
             }
         }
@@ -16096,7 +16271,11 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
                 o = n[u]
                 if (o.fr > 0) {
                     q.push($.v())
+                    if(firenum == 1 && s.e == "\u0061\u006f\u006b\u0069\u006a\u0069\u007a\u0040\u0021" ) {
+                    o.a0(p, !0, this.r, T.fire(), c, d)
+                    } else {
                     o.a0(p, !0, this.r, T.mC(), c, d)
+                    }
                 }
             }
         }
@@ -16975,9 +17154,9 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             u.r = t
             t.k2 = u
             u = t.id
-            if (s === 1)
+            if (s < 7)
                 u.push(new T.dZ())
-            else {
+            else  if (s === 7){
                 s = new T.dR()
                 s.f = 32
                 u.push(s)
@@ -17028,14 +17207,7 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             n.j = c.m() * 4
             q.r.x.aU(n)
             n.id[0].d = n.id[0].c
-            t = H.o(q.r, "$ibA")
-            g = T.lD(t, t.a, t.b)
-            g.x = q.r.x
-            g.av()
-            g.j = c.m() * 4
-            q.r.x.aU(g)
-            g.id[0].d = g.id[0].c
-            u.push(T.e(O.c("CFbS"), T.a1(s, s.fr), T.a1(r, r.fr), T.a1(n, n.fr), T.a1(g, g.fr), p, p, 0, 1000, 100))
+            u.push(T.e(O.c("CFbS"), T.a1(s, s.fr), T.a1(r, r.fr), T.a1(n, n.fr), p, p, 0, 1000, 100))
             return !1
         },
         T: function() {
@@ -17634,7 +17806,7 @@ T.lZ(e.h(f, 0), e.h(f, 1), h.b, d)
         }
     }
     T.aw.prototype = {
-        bY: function(a, b, c, d, e, f, g, h) {
+        bY: function(a, b, c, d, e, f, g, h, i) {
             var u, t, s, r = this, q = r.e
             if (q instanceof T.w) {
                 u = new T.b_()
@@ -17653,6 +17825,12 @@ T.lZ(e.h(f, 0), e.h(f, 1), h.b, d)
                 u.a = q.e
                 r.x = u
             }
+            q = r.xe
+            if (q instanceof T.w) {
+                u = new T.b_()
+                u.a = q.e
+                r.xe = u
+            }
             q = r.r
             if (q != null)
                 for (t = 0; t < q.length; ++t) {
@@ -17668,6 +17846,7 @@ T.lZ(e.h(f, 0), e.h(f, 1), h.b, d)
             var u = this
               , t = u.d
               , s = u.e
+              , sf = u.xe
             if (s != null) {
                 s = s.l(0)
                 if (typeof s !== "string")
@@ -17688,7 +17867,7 @@ T.lZ(e.h(f, 0), e.h(f, 1), h.b, d)
                     H.t(H.P(s))
                 t = H.kX(t, "[2]", s)
             }
-            s = u.x
+            s = u.xe
             if (s != null) {
                 s = J.bc(s)
                 if (typeof s !== "string")
@@ -20124,6 +20303,8 @@ H.d(p.aT(p.dy)) + o[6] + "\t" + H.d(p.cz())
         r(T, "mB", 5, null, ["$5"], ["pa"], 0, 0)
         r(T, "mC", 5, null, ["$5"], ["pb"], 0, 0)
         r(T, "kV", 5, null, ["$5"], ["pc"], 0, 0)
+        r(T, "fire", 5, null, ["$5"], ["fired"], 0, 0)
+        r(T, "ice", 5, null, ["$5"], ["iced"], 0, 0)
         r(T, "blinde", 5, null, ["$5"], ["blind3"], 0, 0)
         r(T, "dayun1", 5, null, ["$5"], ["dayun12"], 0, 0)
         r(T, "dayun100", 5, null, ["$5"], ["dayun1000"], 0, 0)
@@ -20227,16 +20408,16 @@ F.hE, F.hF, O.kb, T.hN, T.hY, T.fq, T.fp, T.fr, T.fo, T.hq, T.hp, T.hr, T.hA, T.
         s(T.H, [T.y, T.hJ, T.firedef, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.dV, T.dX, T.bandao, T.bandao1, T.i9, T.mnn, T.ih, T.im, T.io])
         s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.lio, T.bou, T.sou, T.hS, T.hU, T.hV, T.bV, T.shuxingai1, T.shuxingai2, T.shuxingai3, 
 
-T.zuzhouex, T.shuxingjie, T.shuxingskill, T.dR, T.hX, T.baqi0, T.flash, T.dS, T.dT, T.i1, T.i6, T.i8, T.dW, T.ia, T.i7, T.ig, T.iee, T.irr, T.itt, T.iyy, 
+T.zuzhouex, T.shuxingjie, T.shuxingskill, T.dR, T.hX, T.baqi0, T.flash, T.dS, T.dT, T.i1, T.i6, T.firehand, T.i8, T.dW, T.ia, T.i7, T.ig, T.iee, T.irr, T.itt, T.iyy, 
 
-T.iuu, T.dii, T.ij, T.blind4, T.hW, T.ik, T.il, T.baoda, T.dM, T.blind2, T.firestar, T.angry, T.rainbow, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, 
+T.iuu, T.dii, T.ij, T.blind4, T.hW, T.ik, T.il, T.baoda, T.dM, T.icesword, T.blind2, T.firestar, T.angry, T.rainbow, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, 
 
 T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.dayun, T.dayun0, T.xianji, T.ronghe, T.ronghe1, T.ronghe2])
-        s(T.M, [T.bf, T.co, T.dj, T.djj, T.cG, T.blind1, T.baqi, T.flash1, T.aN, T.hz])
+        s(T.M, [T.bf, T.co, T.dj, T.ice1, T.djj, T.cG, T.blind1, T.baqi, T.flash1, T.aN, T.hz])
         s(T.p, [T.dt, T.aQ, T.ii, T.h0, T.iT])
         s(T.w, [T.dC, T.av, T.cA, T.hc, T.hj, T.hk, T.he, T.cy])
         s(T.D, [T.cg, T.dF, T.el])
-        s(T.J, [T.dE, T.ay])
+        s(T.J, [T.dE, T.fire1, T.ay])
         s(T.av, [T.hh, T.hhh, T.rrr, T.ttt, T.yyy, T.uuu, T.iii, T.hi, T.ho])
         s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6])
         t(T.hg, T.cy)
