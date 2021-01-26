@@ -6134,7 +6134,7 @@ H.ce(m,m,m,m).constructor.prototype)
             var _ = this
             _.r = a
             _.x = null
-            _.y = 2048
+            _.y = 4096
             _.c = _.b = _.a = null
         },
         ice1: function ice1(a) {
@@ -14715,7 +14715,7 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
                 if (u > 0) {
                     t.y = u - a
                     return 0
-                } else if (a + t.r.j >= 2048) {
+                } else if (a + t.r.j * 1.8 >= 4096) {
                     t.H(null, c)
                     return 0
                 }
@@ -14751,7 +14751,7 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
                 if (u > 0) {
                     t.y = u - a
                     return 0
-                } else if (a + t.r.j >= 8192) {
+                } else if (a + t.r.j * 3 >= 8192) {
                     t.H(null, c)
                     return 0
                 }
@@ -16996,8 +16996,6 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             for(kias = 0; kias < this.r.x.a.a[ioas].d.length; kias++) {
             if(this.r.x.a.a[ioas].d[kias].e == "luigi@!") break
             if(this.r.x.a.a[ioas].d[kias].fr > 0) {
-                if (this.r.x.a.a[ioas].d[kias].a6($.b8(), c))
-                    return
                 ue = this.r.x.a.a[ioas].d[kias].r1
                 un = H.o(ue.h(0, $.b8()), "$idj")
                 if (un == null) {
@@ -17008,8 +17006,6 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
                     this.r.x.a.a[ioas].d[kias].rx.i(0, un.x)
                     this.r.x.a.a[ioas].d[kias].E()
                 } else
-                    un.y += 2048
-                if (this.r.r1.G(0, $.X()))
                     un.y += 4096
               }
             }
