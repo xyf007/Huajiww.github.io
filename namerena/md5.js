@@ -3,6 +3,7 @@ var rickzhoudmg = 0, kunag = 0, xianjicout = 0, name1, atk, rickzhoudef = 0
 rickzhouspe = 0
 icenum = 0
 firenum = 0
+powernum = 0
 {}
 (function dartProgram() {
     function copyProperties(a, b) {
@@ -6012,6 +6013,12 @@ H.ce(m,m,m,m).constructor.prototype)
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+        bVex: function bVex() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
         zuzhouex: function zuzhouex() {
             var _ = this
             _.e = !1
@@ -6123,11 +6130,18 @@ H.ce(m,m,m,m).constructor.prototype)
             _.y = 1024
             _.c = _.b = _.a = null
         },
+        down: function down(a) {
+            var _ = this
+            _.r = a
+            _.x = null
+            _.y = 2048
+            _.c = _.b = _.a = null
+        },
         ice1: function ice1(a) {
             var _ = this
             _.r = a
             _.x = null
-            _.y = 4096
+            _.y = 8192
             _.c = _.b = _.a = null
         },
         djj: function djj(a) {
@@ -6669,6 +6683,12 @@ H.ce(m,m,m,m).constructor.prototype)
             _.c = _.b = _.a = _.r = null
         },
         dM: function dM() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        power: function power() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -14355,6 +14375,23 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             }
         }
     }
+    T.bVex.prototype = {
+        t: function(a, b, c, d) {
+            var u, t, s = a[0].a, r = H.o(s.r1.h(0, $.d3()), "$iaQ")
+            if (r == null)
+                r = new T.aQ()
+            u = T.u(this.r, !0, c)
+            t = r.b
+            d.a.push(T.e(O.c("iksa"), this.r, s, null, null, 1, 1000, 100))
+            for(iade = 0;iade < 3; iade++) {
+            if(s.fr > 0) {
+            d.a.push($.v())
+            s.a0(u * (1.25 + t), !0, this.r, T.mC(), c, d)
+            u = u * 1.25
+             }
+            }
+        }
+    }
     T.zuzhouex.prototype = {
         t: function(a, b, c, d) {
             var u, t, s = a[0].a
@@ -14660,6 +14697,42 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
                 t = b.a
                 t.push($.v())
                 t.push(T.ap(O.c("yICz"), a, u))
+            }
+        },
+        $ip: 1
+    }
+    T.down.prototype = {
+        gR: function() {
+            return -1
+        },
+        al: function(a) {
+            a.A = !0
+        },
+        ff: function(a, b, c) {
+            var u, t = this
+            if (a > 0) {
+                u = t.y
+                if (u > 0) {
+                    t.y = u - a
+                    return 0
+                } else if (a + t.r.j >= 2048) {
+                    t.H(null, c)
+                    return 0
+                }
+            }
+            return a
+        },
+        H: function(a, b) {
+            var u, t
+            this.C()
+            u = this.r
+            u.r1.S(0, $.b8())
+            this.x.C()
+            u.E()
+            if (u.fr > 0) {
+                t = b.a
+                t.push($.v())
+                t.push(T.ap(O.c("EJLb"), a, u))
             }
         },
         $ip: 1
@@ -15806,9 +15879,7 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
         },
         al: function(a) {
             var u = this.x
-            u.cy = 0
-            u.Q = 0
-            u.ch = 0
+            u.cy = -114444444444444444444444444444444444444444444444444444444514
         },
         aq: function(a, b) {
             if (--this.z === 0)
@@ -15824,8 +15895,6 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             if (u.fr > 0) {
                 t = b.a
                 u.cy = u.u[3] + 36
-                u.Q = u.u[0] + 36
-                u.ch = u.u[1] + 36
                 t.push($.v())
                 t.push(T.ap(O.c("Hiqa"), a, u))
             }
@@ -16898,7 +16967,8 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             var u, t = this, s = new T.bm()
             s.r = t
             t.k2 = s
-            t.af = new T.bV()
+            t.af = new T.bVex()
+            t.oi = new T.power()
             s = new T.i4(t)
             s.r = t
             s.f = 63
@@ -16906,10 +16976,47 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             u = t.id
             u.push(s)
             u.push(t.af)
+            u.push(t.oi)
             s = new T.dU(30)
             s.r = t
             t.aP = s
             u.push(s)
+        }
+    }
+    T.power.prototype = {
+        t: function(a, b, c, d) {
+            var u = a[0].a
+              , t = T.u(this.r, !0, c)
+              , numm
+              , un
+              , ue
+            numm = O.c("FWTX")
+            d.a.push(T.e(numm, this.r, this.r, null, null, 1, 1000, 100))
+            for(ioas = 0; ioas < this.r.x.a.a.length; ioas++){
+            for(kias = 0; kias < this.r.x.a.a[ioas].d.length; kias++) {
+            if(this.r.x.a.a[ioas].d[kias].e == "luigi@!") break
+            if(this.r.x.a.a[ioas].d[kias].fr > 0) {
+                if (this.r.x.a.a[ioas].d[kias].a6($.b8(), c))
+                    return
+                ue = this.r.x.a.a[ioas].d[kias].r1
+                un = H.o(ue.h(0, $.b8()), "$idj")
+                if (un == null) {
+                    un = new T.down(this.r.x.a.a[ioas].d[kias])
+                    un.x = new T.hs(un)
+                    ue.k(0, $.b8(), un)
+                    this.r.x.a.a[ioas].d[kias].r2.i(0, un)
+                    this.r.x.a.a[ioas].d[kias].rx.i(0, un.x)
+                    this.r.x.a.a[ioas].d[kias].E()
+                } else
+                    un.y += 2048
+                if (this.r.r1.G(0, $.X()))
+                    un.y += 4096
+              }
+            }
+          }
+            this.r.id[2].f = 0
+            d.a.push(T.e(O.c("WfVO"), this.r, this.r, null, null, 1, 1000, 100))
+            powernum = 1
         }
     }
     T.i4.prototype = {
@@ -16919,7 +17026,7 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
         ai: function(a, b) {},
         ar: function(a, b) {
             var u = this.fr
-            if (u.aI >= 3) {
+            if (u.aI >= 4) {
                 if (u.aP.Q >= 29)
                     return !1
                 return a.m() < 7
@@ -16935,22 +17042,31 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             u = ++p.aI
             if (u === 1) {
                 u = d.a
-                u.push(T.e(O.c("AfbY"), s.r, r, r, r, 0, q, 100))
+                u.push(T.e(O.c("AfbY"), s.r, r, r, r, 1, q, 100))
                 p.E()
                 u.push(T.e(O.c("RCLf"), s.r, r, r, r, 0, q, 100))
             } else {
                 t = d.a
                 if (u === 2) {
-                    t.push(T.e(O.c("BtAs"), s.r, r, r, r, 0, q, 100))
-                    p.af.f = 120
+                    t.push(T.e(O.c("BtAs"), s.r, r, r, r, 1, q, 100))
+                    p.af.f = 70
                     t.push(T.e(O.c("SnZl"), s.r, r, r, r, 0, q, 100))
                 } else if (u === 3) {
-                    t.push(T.e(O.c("Bfuy"), s.r, r, r, r, 0, q, 100));
-                    --p.aP.Q
+                    if(powernum == 1) {
+                    t.push(T.e(O.c("BtAs"), s.r, r, r, r, 1, q, 100))
+                    p.af.f = 70
+                    t.push(T.e(O.c("SnZl"), s.r, r, r, r, 0, q, 100))
+                    } else {
+                    t.push(T.e(O.c("oPHQ"), s.r, r, r, r, 1, q, 100));
+                    p.oi.f = 120
+                    }
+                } else if (u === 4) {
+                    t.push(T.e(O.c("mRZE"), s.r, r, r, r, 1, q, 100));
+                    ++p.aP.Q
                     t.push(T.e(O.c("bmZp"), s.r, r, p.aP.Q, r, 0, q, 100))
                 } else {
-                    t.push(T.e(O.c("mRZE"), s.r, r, r, r, 0, q, 100));
-                    ++p.aP.Q
+                    t.push(T.e(O.c("Bfuy"), s.r, r, r, r, 1, q, 100));
+                    --p.aP.Q
                     t.push(T.e(O.c("bmZp"), s.r, r, p.aP.Q, r, 0, q, 100))
                 }
             }
@@ -16959,8 +17075,9 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
         H: function(a, b) {
             var u = this.fr
             u.r1.S(0, $.kk())
-            u.aI = u.af.f = 0
+            u.aI = u.af.f = u.oi.f = 0
             u.E()
+            powernum = 0
         },
         $ip: 1
     }
@@ -20406,14 +20523,14 @@ F.hE, F.hF, O.kb, T.hN, T.hY, T.fq, T.fp, T.fr, T.fo, T.hq, T.hp, T.hr, T.hA, T.
         t(Z.hl, Z.ax)
         s(F.ab, [T.H, T.M, T.D, T.J, T.L, T.K, T.A, T.G, T.C, T.I])
         s(T.H, [T.y, T.hJ, T.firedef, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.dV, T.dX, T.bandao, T.bandao1, T.i9, T.mnn, T.ih, T.im, T.io])
-        s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.lio, T.bou, T.sou, T.hS, T.hU, T.hV, T.bV, T.shuxingai1, T.shuxingai2, T.shuxingai3, 
+        s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.lio, T.bou, T.sou, T.hS, T.hU, T.hV, T.bV, T.bVex, T.power, T.shuxingai1, T.shuxingai2, T.shuxingai3, 
 
 T.zuzhouex, T.shuxingjie, T.shuxingskill, T.dR, T.hX, T.baqi0, T.flash, T.dS, T.dT, T.i1, T.i6, T.firehand, T.i8, T.dW, T.ia, T.i7, T.ig, T.iee, T.irr, T.itt, T.iyy, 
 
 T.iuu, T.dii, T.ij, T.blind4, T.hW, T.ik, T.il, T.baoda, T.dM, T.icesword, T.blind2, T.firestar, T.angry, T.rainbow, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, 
 
 T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.dayun, T.dayun0, T.xianji, T.ronghe, T.ronghe1, T.ronghe2])
-        s(T.M, [T.bf, T.co, T.dj, T.ice1, T.djj, T.cG, T.blind1, T.baqi, T.flash1, T.aN, T.hz])
+        s(T.M, [T.bf, T.co, T.dj, T.down, T.ice1, T.djj, T.cG, T.blind1, T.baqi, T.flash1, T.aN, T.hz])
         s(T.p, [T.dt, T.aQ, T.ii, T.h0, T.iT])
         s(T.w, [T.dC, T.av, T.cA, T.hc, T.hj, T.hk, T.he, T.cy])
         s(T.D, [T.cg, T.dF, T.el])
