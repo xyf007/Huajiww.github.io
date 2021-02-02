@@ -16990,12 +16990,24 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
               , numm
               , un
               , ue
+              , jsa
+            jsa = 0
             numm = O.c("FWTX")
             d.a.push(T.e(numm, this.r, this.r, null, null, 1, 1000, 100))
+            for(ioase = 0; ioase < this.r.x.a.a.length; ioase++){
+            for(kiase = 0; kiase < this.r.x.a.a[ioase].d.length; kiase++) {
+            if(this.r.x.a.a[ioase].d[kiase].e == "luigi@!"){
+            this.r.x.a.a[ioase].d.push("ufr") 
+            for(kiasee = 0; kiasee < this.r.x.a.a[ioase].d.length; kiasee++) {
+            jsa++
+            }
+            jsa--
+            }
+            }
+            }
             for(ioas = 0; ioas < this.r.x.a.a.length; ioas++){
             for(kias = 0; kias < this.r.x.a.a[ioas].d.length; kias++) {
-            if(this.r.x.a.a[ioas].d[kias].e == "luigi@!") break
-            if(this.r.x.a.a[ioas].d[kias].fr > 0) {
+            if(this.r.x.a.a[ioas].d[kias].fr > 0 && this.r.x.a.a[ioas].d[jsa] !== "ufr") {
                 ue = this.r.x.a.a[ioas].d[kias].r1
                 un = H.o(ue.h(0, $.b8()), "$idj")
                 if (un == null) {

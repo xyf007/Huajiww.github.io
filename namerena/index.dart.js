@@ -4123,7 +4123,8 @@
 					j = ".checkBoss",
 					i = ".loaderbg",
 					h = "click",
-                                        rand = Math.floor(Math.random()*5)
+                                        rand = Math.floor(Math.random()*5),
+                                        arra = new Array()
 				$.iW = H.k(C.L.v(0, $.ho.d), "$iF")
 				window.sessionStorage.setItem("HHbf", $.ho.d)
 				O.lL($.iW)
@@ -4139,6 +4140,11 @@
 				s.c = r
 				q = H.k(t.querySelector("#endtitle"), "$ir")
 				s.b = q
+                                arra.push(O.z("fRIp"))
+                                arra.push(O.z("LiDy"))
+                                arra.push(O.z("cbhR"))
+                                arra.push(O.z("dCRG"))
+                                arra.push(O.z("urPj"))
 				p = O.z("rrTo")
 				o = C.a.j(0)
 				q.textContent = H.aw(p, "[0]", o)
@@ -4170,17 +4176,7 @@
 				r.dx = H.k(t.querySelector(".ad_v"), "$ir")
 				t.querySelector("#inputtitle")
 					.textContent = O.z("SoeW")
-                                if(rand == 0 ) {
-				u.placeholder = O.z("fRIp")
-                                } else if(rand == 1) {
-				u.placeholder = O.z("LiDy")
-                                } else if(rand == 2) {
-				u.placeholder = O.z("cbhR")
-                                } else if(rand == 3) {
-				u.placeholder = O.z("dCRG")
-                                } else if(rand == 4) {
-				u.placeholder = O.z("urPj")
-                                }
+				u.placeholder = arra[rand]
 				u = H.k(t.querySelector(".goBtn"), "$iO")
 				r.e = u
 				u.textContent = O.z("vakv")
