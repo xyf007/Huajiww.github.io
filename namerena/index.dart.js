@@ -4122,7 +4122,8 @@
 				var u, t, s, r, q, p, o, n, m, l, k = "none",
 					j = ".checkBoss",
 					i = ".loaderbg",
-					h = "click"
+					h = "click",
+                                        rand = Math.floor(Math.random()*5)
 				$.iW = H.k(C.L.v(0, $.ho.d), "$iF")
 				window.sessionStorage.setItem("HHbf", $.ho.d)
 				O.lL($.iW)
@@ -4169,7 +4170,17 @@
 				r.dx = H.k(t.querySelector(".ad_v"), "$ir")
 				t.querySelector("#inputtitle")
 					.textContent = O.z("SoeW")
+                                if(rand == 0 ) {
 				u.placeholder = O.z("fRIp")
+                                } else if(rand == 1) {
+				u.placeholder = O.z("LiDy")
+                                } else if(rand == 2) {
+				u.placeholder = O.z("cbhR")
+                                } else if(rand == 3) {
+				u.placeholder = O.z("dCRG")
+                                } else if(rand == 4) {
+				u.placeholder = O.z("urPj")
+                                }
 				u = H.k(t.querySelector(".goBtn"), "$iO")
 				r.e = u
 				u.textContent = O.z("vakv")
