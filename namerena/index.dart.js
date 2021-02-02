@@ -4123,7 +4123,7 @@
 					j = ".checkBoss",
 					i = ".loaderbg",
 					h = "click",
-                                        rand = Math.floor(Math.random()*10),
+                                        rand = Math.floor(Math.random()*13),
                                         arra = new Array()
 				$.iW = H.k(C.L.v(0, $.ho.d), "$iF")
 				window.sessionStorage.setItem("HHbf", $.ho.d)
@@ -4150,6 +4150,9 @@
                                 arra.push(O.z("bSLS"))
                                 arra.push(O.z("KTLj"))
                                 arra.push(O.z("JWhW"))
+                                arra.push(O.z("pgZQ"))
+                                arra.push(O.z("YCYy"))
+                                arra.push(O.z("HaNm"))
 				p = O.z("rrTo")
 				o = C.a.j(0)
 				q.textContent = H.aw(p, "[0]", o)
