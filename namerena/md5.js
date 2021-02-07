@@ -1,5 +1,5 @@
 ﻿//# sourceURL=md5.js
-var rickzhoudmg = 0, kunag = 0, xianjicout = 0, name1, atk, rickzhoudef = 0
+var rickzhoudmg = 0, kunag = 0, xianjicout = 0, name1, atk,allnum, me, rickzhoudef = 0
 rickzhouspe = 0
 icenum = 0
 firenum = 0
@@ -5142,6 +5142,44 @@ H.ce(m,m,m,m).constructor.prototype)
                     g.at(a, u)
                     return g
                 }
+                if (a == $.guide()) {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.guide(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
                 if (a == $.n_()) {
                     t = H.d(a) + H.d($.ah())
                     s = H.a([], [T.H])
@@ -6280,6 +6318,45 @@ H.ce(m,m,m,m).constructor.prototype)
             _.F = null
             _.de = 1
         },
+        fishman: function fishman(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.a5 = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.de = 1
+            _.X = _.W = !1
+            _.F = null
+            _.de = 1
+        },
         hhh: function hhh(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
             var _ = this
             _.a5 = _.af = null
@@ -6514,6 +6591,12 @@ H.ce(m,m,m,m).constructor.prototype)
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+        fishman1: function fishman1() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
         iee: function iee() {
             var _ = this
             _.e = !1
@@ -6557,6 +6640,13 @@ H.ce(m,m,m,m).constructor.prototype)
             _.z = 2
             _.c = _.b = _.a = null
         },
+        cGf: function cGf(a) {
+            var _ = this
+            _.x = a
+            _.y = null
+            _.z = 2
+            _.c = _.b = _.a = null
+        },
         blind1: function blind1(a) {
             var _ = this
             _.x = a
@@ -6565,6 +6655,12 @@ H.ce(m,m,m,m).constructor.prototype)
             _.c = _.b = _.a = null
         },
         ij: function ij() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        hey: function hey() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -6695,6 +6791,18 @@ H.ce(m,m,m,m).constructor.prototype)
             _.c = _.b = _.a = _.r = null
         },
         blind2: function blind2() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        luos: function luos() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        kill: function kill() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -7369,6 +7477,42 @@ H.ce(m,m,m,m).constructor.prototype)
             _.X = _.W = !1
             _.F = null
         },
+        guide: function guide(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
         f6: function f6(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
             var _ = this
             _.a = a
@@ -7604,7 +7748,37 @@ H.ce(m,m,m,m).constructor.prototype)
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+        arrow: function arrow() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        thirdattack: function thirdattack() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        thunderattack: function thunderattack() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        shadowattack: function shadowattack() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
         bm: function bm() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+        bme: function bme() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -15164,6 +15338,29 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             u[7] = C.d.v(u[7], 2)
         }
     }
+    T.fishman.prototype = {
+        gaj: function() {
+            return this.af.r
+        },
+        aa: function() {
+            var u = new T.aK()
+            u.r = this
+            this.k2 = u
+            this.id.push(new T.hey())
+            this.id.push(new T.hey())
+            this.id.push(new T.hey())
+            this.id.push(new T.hey())
+            this.id.push(new T.hey())
+            this.id.push(new T.hey())
+            this.id.push(new T.hey())
+            this.id.push(new T.hey())
+            this.id.push(new T.hey())
+            this.id.push(new T.hey())
+            this.id.push(new T.hey())
+            this.id.push(new T.hey())
+            me = u
+        }
+    }
     T.hhh.prototype = {
         gaj: function() {
             return this.af.r
@@ -15305,6 +15502,93 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
     }
+    T.fishman1.prototype = {
+        ar: function(a, b) {
+            if (b)
+                if (this.r.fr < 80)
+                    return !1
+            return this.aS(a, b)
+        },
+        a9: function(a, b, c) {
+            return H.a([], [T.Z])
+        },
+        t: function(a, a0, a1, a2) {
+            var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null
+            c.f = C.d.Z(c.f * 0.75)
+            u = a2.a
+            u.push(T.e(O.c("bjCz"), c.r, b, b, b, 60, 1000, 100))
+            t = H.d(c.r.a) + "?" + H.d($.nn())
+            s = c.r
+            r = s.b
+            s = s.c
+            q = H.a([], [T.H])
+            p = H.a([], [T.y])
+            o = P.U(P.f, T.p)
+            n = new F.b([T.M])
+            n.c = n
+            n.b = n
+            m = new F.b([T.L])
+            m.c = m
+            m.b = m
+            l = new F.b([T.G])
+            l.c = l
+            l.b = l
+            k = new F.b([T.J])
+            k.c = k
+            k.b = k
+            j = new F.b([T.K])
+            j.c = j
+            j.b = j
+            i = new F.b([T.D])
+            i.c = i
+            i.b = i
+            h = new F.b([T.A])
+            h.c = h
+            h.b = h
+            g = new F.b([T.C])
+            g.c = g
+            g.b = g
+            f = new F.b([T.I])
+            f.c = f
+            f.b = f
+            e = [P.j]
+            d = new T.fishman(t,r,s,b,q,p,o,n,m,l,k,j,i,h,g,f,H.a([], e),H.a([], e),H.a([], e),H.a([], e))
+            d.Y(t, r, s, b)
+            d.a5 = new T.cj(d)
+            d.af = c
+            d.e = T.du(c.r)
+            d.r = O.c("cMXr")
+            s = c.r
+            d.x = s.x
+            s.I.i(0, d.a5)
+            d.av()
+            d.u[0] = 41
+            d.u[1] = 31
+            d.u[2] = 44
+            d.u[3] = 46
+            d.u[4] = 47
+            d.u[5] = 44
+            d.u[6] = 49
+            d.u[7] = 310
+            d.Q = 41
+            d.ch = 31
+            d.cx = 44 + 160
+            d.cy = 46
+            d.db = 47
+            d.dx = 44
+            d.dy = 49
+            d.fx = 310
+            d.fr = 310
+            if (c.r.r1.G(0, $.X()))
+                d.j = 2048
+            else
+                d.j = -2048
+            c.r.x.aU(d)
+            me = d
+            u.push(T.e(O.c("gXML"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+            c.r.id[2].f = 0
+        }
+    }
     T.iee.prototype = {
         ar: function(a, b) {
             if (b)
@@ -15365,21 +15649,21 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             d.x = s.x
             s.I.i(0, d.a5)
             d.av()
-            d.u[0] = 67
-            d.u[1] = 88
-            d.u[2] = 120
-            d.u[3] = 100
-            d.u[4] = 90
-            d.u[5] = 98
-            d.u[6] = 97
+            d.u[0] = 67 - 36
+            d.u[1] = 88 - 36
+            d.u[2] = 120 - 36
+            d.u[3] = 100 - 36
+            d.u[4] = 90 - 36
+            d.u[5] = 98 - 36
+            d.u[6] = 97 - 36
             d.u[7] = 400
-            d.Q = 67
-            d.ch = 88
-            d.cx = 120 + 160
-            d.cy = 10
-            d.db = 90
-            d.dx = 98
-            d.dy = 97
+            d.Q = 67 - 36
+            d.ch = 88 - 36
+            d.cx = 120 + 160 - 36
+            d.cy = 10 - 36
+            d.db = 90 - 36
+            d.dx = 98 - 36
+            d.dy = 97 - 36
             d.fx = 400
             d.fr = 400
             if (c.r.r1.G(0, $.X()))
@@ -15454,21 +15738,21 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             d.x = s.x
             s.I.i(0, d.a5)
             d.av()
-            d.u[0] = 94
-            d.u[1] = 90
-            d.u[2] = 84
-            d.u[3] = 88
-            d.u[4] = 121
-            d.u[5] = 110
-            d.u[6] = 120
+            d.u[0] = 94 - 36
+            d.u[1] = 90 - 36
+            d.u[2] = 84 - 36
+            d.u[3] = 88 - 36
+            d.u[4] = 121 - 36
+            d.u[5] = 110 - 36
+            d.u[6] = 120 - 36
             d.u[7] = 400
-            d.Q = 94
-            d.ch = 90
-            d.cx = 84 + 160
-            d.cy = 88
-            d.db = 121
-            d.dx = 110
-            d.dy = 120
+            d.Q = 94 - 36
+            d.ch = 90 - 36
+            d.cx = 84 + 160 - 36
+            d.cy = 88 - 36
+            d.db = 121 - 36
+            d.dx = 110 - 36
+            d.dy = 120 - 36
             d.fx = 400
             d.fr = 400
             if (c.r.r1.G(0, $.X()))
@@ -15543,21 +15827,21 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             d.x = s.x
             s.I.i(0, d.a5)
             d.av()
-            d.u[0] = 80
-            d.u[1] = 120
-            d.u[2] = 81
-            d.u[3] = 115
-            d.u[4] = 88
-            d.u[5] = 120
-            d.u[6] = 90
+            d.u[0] = 80 - 36
+            d.u[1] = 120 - 36
+            d.u[2] = 81 - 36
+            d.u[3] = 115 - 36
+            d.u[4] = 88 - 36
+            d.u[5] = 120 - 36
+            d.u[6] = 90 - 36
             d.u[7] = 400
-            d.Q = 80
-            d.ch = 120
-            d.cx = 81 + 160
-            d.cy = 115
-            d.db = 88
-            d.dx = 120
-            d.dy = 90
+            d.Q = 80 - 36
+            d.ch = 120 - 36
+            d.cx = 81 + 160 - 36
+            d.cy = 115 - 36
+            d.db = 88 - 36
+            d.dx = 120 - 36
+            d.dy = 90 - 36
             d.fx = 400
             d.fr = 400
             if (c.r.r1.G(0, $.X()))
@@ -15634,21 +15918,21 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             d.x = s.x
             s.I.i(0, d.a5)
             d.av()
-            d.u[0] = 80
-            d.u[1] = 128
-            d.u[2] = 90
-            d.u[3] = 95
-            d.u[4] = 100
-            d.u[5] = 100
-            d.u[6] = 99
+            d.u[0] = 80 - 36
+            d.u[1] = 128 - 36
+            d.u[2] = 90 - 36
+            d.u[3] = 95 - 36
+            d.u[4] = 100 - 36
+            d.u[5] = 100 - 36
+            d.u[6] = 99 - 36
             d.u[7] = 400
-            d.Q = 80
-            d.ch = 128
-            d.cx = 90 + 160
-            d.cy = 95
-            d.db = 100
-            d.dx = 100
-            d.dy = 99
+            d.Q = 80 - 36
+            d.ch = 128 - 36
+            d.cx = 90 + 160 - 36
+            d.cy = 95 - 36
+            d.db = 100 - 36
+            d.dx = 100 - 36
+            d.dy = 99 - 36
             d.fx = 400
             d.fr = 400
             if (c.r.r1.G(0, $.X()))
@@ -15725,21 +16009,21 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             d.x = s.x
             s.I.i(0, d.a5)
             d.av()
-            d.u[0] = 99
-            d.u[1] = 99
-            d.u[2] = 99
-            d.u[3] = 99
-            d.u[4] = 99
-            d.u[5] = 99
-            d.u[6] = 99
+            d.u[0] = 99 - 36
+            d.u[1] = 99 - 36
+            d.u[2] = 99 - 36
+            d.u[3] = 99 - 36
+            d.u[4] = 99 - 36
+            d.u[5] = 99 - 36
+            d.u[6] = 99 - 36
             d.u[7] = 400
-            d.Q = 99
-            d.ch = 99
-            d.cx = 99 + 160
-            d.cy = 99
-            d.db = 99
-            d.dx = 99
-            d.dy = 99
+            d.Q = 99 - 36
+            d.ch = 99 - 36
+            d.cx = 99 + 160 - 36
+            d.cy = 99 - 36
+            d.db = 99 - 36
+            d.dx = 99 - 36
+            d.dy = 99 - 36
             d.fx = 400
             d.fr = 400
             if (c.r.r1.G(0, $.X()))
@@ -15816,21 +16100,21 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             d.x = s.x
             s.I.i(0, d.a5)
             d.av()
-            d.u[0] = 128
-            d.u[1] = 128
-            d.u[2] = 128
-            d.u[3] = 128
-            d.u[4] = 128
-            d.u[5] = 128
-            d.u[6] = 128
+            d.u[0] = 128 - 36
+            d.u[1] = 128 - 36
+            d.u[2] = 128 - 36
+            d.u[3] = 128 - 36
+            d.u[4] = 128 - 36
+            d.u[5] = 128 - 36
+            d.u[6] = 128 - 36
             d.u[7] = 400
-            d.Q = 128
-            d.ch = 128
-            d.cx = 128 + 160
-            d.cy = 128
-            d.db = 128
-            d.dx = 128
-            d.dy = 128
+            d.Q = 128 - 36
+            d.ch = 128 - 36
+            d.cx = 128 + 160 - 36
+            d.cy = 128 - 36
+            d.db = 128 - 36
+            d.dx = 128 - 36
+            d.dy = 128 - 36
             d.fx = 400
             d.fr = 400
             if (c.r.r1.G(0, $.X()))
@@ -15869,6 +16153,33 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
                 t = b.a
                 t.push($.v())
                 t.push(T.ap(O.c("wHzz"), a, u))
+            }
+        },
+        $ip: 1
+    }
+    T.cGf.prototype = {
+        gR: function() {
+            return -1
+        },
+        al: function(a) {
+            var u = this.x
+            u.cx = 80
+        },
+        aq: function(a, b) {
+            if (--this.z === 0)
+                this.H(null, b)
+        },
+        H: function(a, b) {
+            var u, t
+            this.C()
+            u = this.x
+            u.r1.S(0, $.fishing())
+            this.y.C()
+            u.E()
+            if (u.fr > 0) {
+                t = b.a
+                t.push($.v())
+                t.push(T.ap(O.c("sNhu"), a, u))
             }
         },
         $ip: 1
@@ -15945,6 +16256,45 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             if (s.r.r1.G(0, $.X()))
                 t.z += 4
             p.push(T.e(C.c.K(O.c("clnM"), $.nk()), s.r, q, r, r, 60, 1000, 100))
+        }
+    }
+    T.hey.prototype = {
+        a8: function(a, b, c) {
+            var u = this.bX(a, b, c, !0)
+            return a.r1.h(0, $.fishing()) != null ? u / 2 : u
+        },
+        t: function(a, b, c, d) {
+            var u, t, s = this, r = null, q = a[0].a, p = d.a, eo = c.m() & 1, ev = T.u(s.r, !0, c)
+            p.push(T.e(O.c("LfYC"), s.r, q, r, r, 1, 1000, 100))
+            p.push($.v())
+            switch(eo) {
+            case 0:
+            if (!q.a6($.fishing(), c))
+                u = q.fr > 0 && !q.A && T.bd(s.r.db, q.dx, c)
+            else
+                u = !0
+            q.j = q.j - (q.cx + 64)
+            u = q.r1
+            t = H.o(u.h(0, $.fishing()), "$icG")
+            if (t == null) {
+                t = new T.cGf(q)
+                t.y = new T.ay(t)
+                u.k(0, $.fishing(), t)
+                q.r2.i(0, t)
+                q.x1.i(0, t.y)
+                q.E()
+            } else
+                t.z += 2
+            if (s.r.r1.G(0, $.X()))
+                t.z += 4
+            p.push(T.e(C.c.K(O.c("OHQm"), $.nk()), s.r, q, r, r, 60, 1000, 100))
+            break
+            case 1:
+            p.push(T.e(O.c("fPXQ"), s.r, q, r, r, 1, 1000, 100))
+            p.push($.v())
+            q.a0e(ev * 4, !0, s.r, T.a3(), c, d)
+            break
+            }
         }
     }
     T.blind4.prototype = {
@@ -17390,6 +17740,410 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             t.push(u)
         }
     }
+    T.guide.prototype = {
+        gah: function() {
+            return C.guide
+        },
+        gaQ: function() {
+            return H.a([], [P.f])
+        },
+        gaB: function() {
+            return H.a([$.b9()], [P.f])
+        },
+        aa: function() {
+            var u, t = new T.bm()
+            t.r = this
+            this.k2 = t
+            t = this.id
+            u = new T.luos()
+            u.f = 32
+            t.push(u)
+            u = new T.arrow()
+            u.f = 0
+            t.push(u)
+            u = new T.fishman1()
+            u.f = 99999
+            t.push(u)
+            u = new T.ih()
+            u.f = 79
+            t.push(u)
+            u = new T.kill()
+            u.f = 0
+            t.push(u)
+        }
+    }
+    T.luos.prototype = {
+        t: function(a, b, c, d) {
+            var u = a[0].a
+              , t = T.u(this.r, !0, c)
+              , oe = 0
+            this.r.id[1].f = 64
+            oe = c.m() & 3
+            this.r.id[0].f -= 8
+            if(this.r.id[0].f == 8) this.r.id[0].f = 32
+            switch (oe) {
+            case 0:
+            d.a.push(T.e(O.c("lsjZ"), this.r, this.r, null, null, 1, 1000, 100))
+            this.r.cy = 150
+            this.r.k2 = new T.bme()
+            this.r.k2.r = this.r
+            d.a.push(T.e(O.c("PrCY"), this.r, this.r, null, null, 0, 1000, 100))
+            break
+            case 1:
+            d.a.push(T.e(O.c("PRvD"), this.r, this.r, null, null, 1, 1000, 100))
+            this.r.k2 = new T.thunderattack()
+            this.r.k2.r = this.r
+            this.r.cy = 64
+            d.a.push(T.e(O.c("mjUp"), this.r, this.r, null, null, 0, 1000, 100))
+            break
+            case 2:
+            d.a.push(T.e(O.c("jMpm"), this.r, this.r, null, null, 1, 1000, 100))
+            this.r.k2 = new T.thirdattack()
+            this.r.k2.r = this.r
+            this.r.cy = 64
+            d.a.push(T.e(O.c("mjUp"), this.r, this.r, null, null, 0, 1000, 100))
+            break
+            case 3:
+            d.a.push(T.e(O.c("XWio"), this.r, this.r, null, null, 1, 1000, 100))
+            this.r.k2 = new T.shadowattack()
+            this.r.k2.r = this.r
+            this.r.cy = 64
+            d.a.push(T.e(O.c("mjUp"), this.r, this.r, null, null, 0, 1000, 100))
+            break
+            }
+        }
+    }
+    T.arrow.prototype = {
+        t: function(a, b, c, d) {
+            var u = a[0].a
+              , t = T.u(this.r, !0, c)
+              , oee = 0
+              , oer = 0
+            oer = c.m() & 3
+            if(oer == 1) {
+            this.r.id[1].f = 0
+            d.a.push(T.e(O.c("JZjZ"), this.r, this.r, null, null, 1, 1000, 100))
+            allnum = 4
+            } else {
+            oee = c.m() & 3
+            this.r.id[1].f = 0
+            switch (oee) {
+            case 0:
+            d.a.push(T.e(O.c("Cyvu"), this.r, this.r, null, null, 1, 1000, 100))
+            allnum = 0
+            break
+            case 1:
+            d.a.push(T.e(O.c("YcLO"), this.r, this.r, null, null, 1, 1000, 100))
+            allnum = 1
+            break
+            case 2:
+            d.a.push(T.e(O.c("sSha"), this.r, this.r, null, null, 1, 1000, 100))
+            allnum = 2
+            break
+            case 3:
+            d.a.push(T.e(O.c("hXcU"), this.r, this.r, null, null, 1, 1000, 100))
+            allnum = 3
+            break
+            }
+           }
+        }
+    }
+    T.kill.prototype = {
+        t: function(a, b, c, d) {
+            var u = a[0].a
+              , t = T.u(this.r, !0, c)
+              , dds = 0
+              , ddse = 0
+              , hp = 0
+              , lll = 0
+              for(ixnd = 0; ixnd < this.r.x.a.e.length; ixnd++) {
+              if(this.r.x.a.e[ixnd].a == "\u0067\u0075\u0069\u0064\u0065\u003f\u0073\u0068\u0061\u0064\u006f\u0077") {
+              dds = this.r.x.a.e[ixnd].fr
+              this.r.x.a.e[ixnd].fr = 0
+              d.a.push(T.e(O.c("vPMA"), this.r, this.r.x.a.e[ixnd], null, null, 1, 1000, 100))
+              d.a.push($.v())
+              d.a.push(T.e(O.c("NHqI"), this.r, T.a1(this.r.x.a.e[ixnd], dds), new T.aT("\u5f52\u96f6"), null, null, 1, 1000, 100))
+              this.r.x.a.e[ixnd].bf(dds, this.r.x.a.e[ixnd], c, d)
+              ddse = this.r.fx - this.r.fr
+              hp = this.r.fr
+              this.r.fr = 364
+              d.a.push($.v())
+              d.a.push(T.e(O.c("vWuw"), this.r, T.a1(this.r, hp), new T.aG("\u56de\u6ee1"), null, null, 1, 1000, 100))
+              this.r.bI(this.r, d)
+              break
+            }
+          }
+        }
+    }
+    T.thirdattack.prototype = {
+        gb3: function() {
+            return 5
+        },
+        gb4: function() {
+            return 6
+        },
+        t: function(a, b, c, d) {
+            var u, t, s, r, q, p, o, n = H.a([], [T.aU])
+            for (u = 0; u < a.length; ++u)
+                n.push(a[u].a)
+            switch(allnum) {
+            case 0:
+            t = O.c("BMYY")
+            break
+            case 1:
+            t = O.c("KCpx")
+            break
+            case 2:
+            t = O.c("ssdD")
+            break
+            case 3:
+            t = O.c("aqdp")
+            break
+            case 4:
+            t = O.c("rSoA")
+            break
+            default:
+            t = O.c("Iwpv")
+            break
+            }
+            s = this.r
+            r = H.a(n.slice(1), [H.n(n, 1)])
+            q = d.a
+            q.push(T.e(t, s, null, null, r, 0, 1000, 100))
+            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
+            for (u = 0; u < 5; ++u) {
+                o = n[u]
+                if (o.fr > 0) {
+                    q.push($.v())
+                    switch(allnum) {
+                    case 0 :
+                    o.a0(p * 2, !0, this.r, T.mC(), c, d)
+                    break
+                    case 1 :
+                    o.a0(p, !0, this.r, T.kV(), c, d)
+                    break
+                    case 2 :
+                    o.a0(p, !0, this.r, T.a3(), c, d)
+                    if (o.fr > 0) {
+                    q.push(T.e(O.c("zVVf"), s, null, null, r, 0, 1000, 100))
+                    p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
+                    o.a0(p, !0, this.r, T.a3(), c, d)
+                    }
+                    break
+                    case 3 :
+                    o.a0(p, !0, this.r, T.qc(), c, d)
+                    break
+                    case 4:
+                    o.a0(p, !0, this.r, T.a3(), c, d)
+                    break
+                    default:
+                    o.a0(p, !0, this.r, T.a3(), c, d)
+                    break
+                    }
+                }
+            }
+        }
+    }
+    T.thunderattack.prototype = {
+        t: function(a, b, c, d) {
+            var u, t, s, r, q, p, o, n = this, m = null, l = a[0].a, k = d.a, op = null
+            switch(allnum) {
+            case 0:
+            k.push(T.e(O.c("BMYY"), n.r, l, m, m, 0, 1000, 100))
+            break
+            case 1:
+            k.push(T.e(O.c("KCpx"), n.r, l, m, m, 0, 1000, 100))
+            break
+            case 2:
+            k.push(T.e(O.c("ssdD"), n.r, l, m, m, 0, 1000, 100))
+            break
+            case 3:
+            k.push(T.e(O.c("aqdp"), n.r, l, m, m, 0, 1000, 100))
+            break
+            case 4:
+            k.push(T.e(O.c("rSoA"), n.r, l, m, m, 0, 1000, 100))
+            break
+            default:
+            k.push(T.e(O.c("Iwpv"), n.r, l, m, m, 0, 1000, 100))
+            break
+            }
+            u = 5
+            t = 100 + n.r.cy
+            for (s = !1,
+            r = 0; r < u; ++r) {
+                q = n.r
+                if (q.fr > 0 && !q.A && l.fr > 0) {
+                    k.push($.v())
+                    if (l.fr > 0 && !l.A && T.bd(t, l.dx + l.cy, c)) {
+                        if (s)
+                            k.push(T.e(O.c("SYdr"), l, n.r, m, m, 0, 1000, 100))
+                        else
+                            k.push(T.e(O.c("vVob"), l, n.r, m, m, 0, 1000, 100))
+                        return
+                    }
+                    t -= 10
+                    q = T.u(n.r, !0, c)
+                    p = k.length
+                    o = n.r
+                    switch(allnum) {
+                    case 0 :
+                    if (l.aA(l.ak(C.e.Z(q * 0.72 / T.cc(l, !0, c)), o, T.mC(), c, d), o, T.mC(), c, d) > 0)
+                        s = !0
+                    k[p].b = 300
+                    break
+                    case 1 :
+                    if (l.aA(l.ak(C.e.Z(q * 0.36 / T.cc(l, !0, c)), o, T.kV(), c, d), o, T.kV(), c, d) > 0)
+                        s = !0
+                    k[p].b = 300
+                    break
+                    case 2 :
+                    if (l.aA(l.ak(C.e.Z(q * 0.36 / T.cc(l, !0, c)), o, T.a3(), c, d), o, T.a3(), c, d) > 0) {
+                        s = !0
+                        if(l.fr > 0) {
+                        op = T.u(o, !1, c)
+                        k.push(T.e(O.c("zVVf"), l, n.r, m, m, 0, 1000, 100))
+                        l.a0(op, !0, o, T.a3(), c, d)
+                        }
+                        }
+                    k[p].b = 300
+                    break
+                    case 3 :
+                    if (l.aA(l.ak(C.e.Z(q * 0.36 / T.cc(l, !0, c)), o, T.qc(), c, d), o, T.qc(), c, d) > 0)
+                        s = !0
+                    k[p].b = 300
+                    break
+                    case 4:
+                    if (l.aA(l.ak(C.e.Z(q * 0.36 / T.cc(l, !0, c)), o, T.a3(), c, d), o, T.a3(), c, d) > 0)
+                        s = !0
+                    k[p].b = 300
+                    break
+                    default:
+                    if (l.aA(l.ak(C.e.Z(q * 0.36 / T.cc(l, !0, c)), o, T.a3(), c, d), o, T.a3(), c, d) > 0)
+                        s = !0
+                    k[p].b = 300
+                    break
+                    }
+                }
+            }
+        }
+    }
+    T.shadowattack.prototype = {
+        gb3: function() {
+            return 5
+        },
+        gb4: function() {
+            return 6
+        },
+        t: function(a, b, c, d) {
+            var u, t, s, r, q, p, o, n = H.a([], [T.aU])
+            for (u = 0; u < a.length; ++u)
+                n.push(a[u].a)
+            switch(allnum) {
+            case 0:
+            t = O.c("BMYY")
+            break
+            case 1:
+            t = O.c("KCpx")
+            break
+            case 2:
+            t = O.c("ssdD")
+            break
+            case 3:
+            t = O.c("aqdp")
+            break
+            case 4:
+            t = O.c("rSoA")
+            break
+            default:
+            t = O.c("Iwpv")
+            break
+            }
+            s = this.r
+            r = H.a(n.slice(1), [H.n(n, 1)])
+            q = d.a
+            q.push(T.e(t, s, null, null, r, 0, 1000, 100))
+            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
+            for (u = 0; u < 2; ++u) {
+                p = T.u(this.r, !0, c)
+                o = n[u]
+                if (o.fr > 0) {
+                  for (ux = 0; ux < 3; ++ux) {
+                   if (o.fr > 0) {
+                    q.push($.v())
+                    switch(allnum) {
+                    case 0: 
+                    o.a0(p, !0, this.r, T.mC(), c, d)
+                    p = T.u(this.r, !0, c) * 2
+                    break
+                    case 1: 
+                    o.a0(p, !0, this.r, T.kV(), c, d)
+                    p = T.u(this.r, !0, c) * 0.7
+                    break
+                    case 2: 
+                    o.a0(p, !0, this.r, T.a3(), c, d)
+                    p = T.u(this.r, !0, c) * 0.7
+                    if(o.fr > 0) {
+                    q.push(T.e(O.c("zVVf"), s, null, null, r, 0, 1000, 100))
+                    o.a0(p, !0, this.r, T.a3(), c, d)
+                    p = T.u(this.r, !0, c) * 0.7
+                    }
+                    break
+                    case 3: 
+                    o.a0(p, !0, this.r, T.qc(), c, d)
+                    p = T.u(this.r, !0, c) * 0.7
+                    break
+                    case 4: 
+                    o.a0(p, !0, this.r, T.a3(), c, d)
+                    p = T.u(this.r, !0, c) * 0.7
+                    break
+                    default:
+                    o.a0(p, !0, this.r, T.a3(), c, d)
+                    p = T.u(this.r, !0, c) * 0.7
+                    break
+                    }
+                    }
+                  }
+                }
+            }
+        }
+    }
+    T.bme.prototype = {
+        t: function(a, b, c, d) {
+            var u = a[0].a
+              , t = T.u(this.r, !1, c)
+            switch(allnum) {
+            case 0:
+            d.a.push(T.e(O.c("BMYY"), this.r, u, null, null, 0, 1000, 100))
+            u.a0(t * 2, !1, this.r, T.mC(), c, d)
+            break
+            case 1:
+            d.a.push(T.e(O.c("KCpx"), this.r, u, null, null, 0, 1000, 100))
+            u.a0(t, !1, this.r, T.kV(), c, d)
+            break
+            case 2:
+            d.a.push(T.e(O.c("ssdD"), this.r, u, null, null, 0, 1000, 100))
+            u.a0(t, !1, this.r, T.a3(), c, d)
+            if(u.fr > 0) {
+            d.a.push(T.e(O.c("zVVf"), this.r, u, null, null, 0, 1000, 100))
+            t = T.u(this.r, !1, c)
+            u.a0(t, !1, this.r, T.a3(), c, d)
+            }
+            break
+            case 3:
+            d.a.push(T.e(O.c("aqdp"), this.r, u, null, null, 0, 1000, 100))
+            u.a0(t, !1, this.r, T.qc(), c, d)
+            break
+            case 4:
+            d.a.push(T.e(O.c("rSoA"), this.r, u, null, null, 0, 1000, 100))
+            u.a0(t, !1, this.r, T.a3(), c, d)
+            break
+            default:
+            d.a.push(T.e(O.c("Iwpv"), this.r, u, null, null, 0, 1000, 100))
+            u.a0(t, !1, this.r, T.a3(), c, d)
+            break
+            }
+        }
+    }
     T.xianji.prototype = {
         t: function(a, b, c, d, ke) {
             var u, t, s = a[0].a
@@ -18422,6 +19176,15 @@ T.lZ(e.h(f, 0), e.h(f, 1), h.b, d)
                 r = n
             if (l == null)
                 l = o.k2
+            if(o.fr < 130 && o.e == "\u0067\u0075\u0069\u0064\u0065\u0040\u0021") {
+            for(isdd = 0; isdd < o.x.a.e.length; isdd++) {
+            if(o.x.a.e[isdd].a == "\u0067\u0075\u0069\u0064\u0065\u003f\u0073\u0068\u0061\u0064\u006f\u0077") {
+            l = o.id[4]
+            p = o.id[4]
+            break
+            }
+            }
+            }
             name1 = l.a9(0, m, b)
             if (name1 == undefined) {} else if (name1.length == 0) {} else {
                 if (o.e == "\u0074\u0069\u0065\u0062\u0061\u006b\u0069\u006e\u0067\u0040\u0021" && name1[0].a.e == "\u0064\u0072\u0061\u0067\u006f\u006e\u0040\u0021") {
@@ -18523,12 +19286,31 @@ T.lZ(e.h(f, 0), e.h(f, 1), h.b, d)
             }
             return r.bL(a, b, c, d, e, f)
         },
+        a0e: function(a, b, c, d, e, f) {
+            var u, t, s, r = this
+            a = r.dj(a, b, c, d, e, f)
+            if (a === 0)
+                return 0
+            u = r.cy
+            if (b) {
+                t = r.dx + u
+                s = c.db + c.cy
+            } else {
+                t = r.ch + u
+                s = c.Q + c.cy
+            }
+            return r.bL(a, b, c, d, e, f)
+        },
         bL: function(a, b, c, d, e, f) {
             return this.aA(this.ak(C.e.Z(a / T.cc(this, b, e)), c, d, e, f), c, d, e, f)
         },
         aA: function(a, b, c, d, e) {
             var u, t, s, r, q, p = this
-            if (rickzhoudmg == 1 && b.e == atk) {
+            if (b.e == "\u0067\u0075\u0069\u0064\u0065\u0040\u0021" && allnum == 4) {
+                a += 30
+            } else if (p.a == "\u0067\u0075\u0069\u0064\u0065\u003f\u0073\u0068\u0061\u0064\u006f\u0077") {
+                a = 0
+            } else if (rickzhoudmg == 1 && b.e == atk) {
                 a += 30000
             } else if (rickzhoudef == 1 && p.e == atk) {
                 a = 0
@@ -18585,6 +19367,9 @@ T.lZ(e.h(f, 0), e.h(f, 1), h.b, d)
         cwr: function() {
             return O.c("srWy")
         },
+        cwre: function() {
+            return O.c("rkqG")
+        },
         bf: function(a, b, c, d) {
             var u, t, s = this, r = d.a
             r.push($.v())
@@ -18593,6 +19378,8 @@ T.lZ(e.h(f, 0), e.h(f, 1), h.b, d)
                 xianjicout = 0
             } else if (kunag == 1 && s.r == "\u55b7\u6c14\u7ffc\u9f99") {
                 u = s.cwr()
+            } else if (s.a == "\u0067\u0075\u0069\u0064\u0065\u003f\u0073\u0068\u0061\u0064\u006f\u0077") {
+                u = s.cwre()
             } else {
                 u = s.cw()
             }
@@ -20533,18 +21320,18 @@ F.hE, F.hF, O.kb, T.hN, T.hY, T.fq, T.fp, T.fr, T.fo, T.hq, T.hp, T.hr, T.hA, T.
         s(T.H, [T.y, T.hJ, T.firedef, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.dV, T.dX, T.bandao, T.bandao1, T.i9, T.mnn, T.ih, T.im, T.io])
         s(T.y, [T.dL, T.hI, T.hK, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.lio, T.bou, T.sou, T.hS, T.hU, T.hV, T.bV, T.bVex, T.power, T.shuxingai1, T.shuxingai2, T.shuxingai3, 
 
-T.zuzhouex, T.shuxingjie, T.shuxingskill, T.dR, T.hX, T.baqi0, T.flash, T.dS, T.dT, T.i1, T.i6, T.firehand, T.i8, T.dW, T.ia, T.i7, T.ig, T.iee, T.irr, T.itt, T.iyy, 
+T.zuzhouex, T.shuxingjie, T.shuxingskill, T.dR, T.hX, T.baqi0, T.flash, T.dS, T.dT, T.i1, T.i6, T.firehand, T.i8, T.dW, T.ia, T.i7, T.ig, T.fishman1, T.iee, T.irr, T.itt, T.iyy, 
 
-T.iuu, T.dii, T.ij, T.blind4, T.hW, T.ik, T.il, T.baoda, T.dM, T.icesword, T.blind2, T.firestar, T.angry, T.rainbow, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, 
+T.iuu, T.dii, T.ij, T.blind4, T.hey, T.luos, T.kill, T.hW, T.ik, T.il, T.baoda, T.dM, T.icesword, T.blind2, T.firestar, T.angry, T.rainbow, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, 
 
-T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.dayun, T.dayun0, T.xianji, T.ronghe, T.ronghe1, T.ronghe2])
-        s(T.M, [T.bf, T.co, T.dj, T.down, T.ice1, T.djj, T.cG, T.blind1, T.baqi, T.flash1, T.aN, T.hz])
+T.aK, T.thirdattack, T.arrow, T.thunderattack, T.shadowattack, T.bm, T.bme, T.bn, T.hT, T.dY, T.ic, T.dayun, T.dayun0, T.xianji, T.ronghe, T.ronghe1, T.ronghe2])
+        s(T.M, [T.bf, T.co, T.dj, T.down, T.ice1, T.djj, T.cG, T.cGf, T.blind1, T.baqi, T.flash1, T.aN, T.hz])
         s(T.p, [T.dt, T.aQ, T.ii, T.h0, T.iT])
         s(T.w, [T.dC, T.av, T.cA, T.hc, T.hj, T.hk, T.he, T.cy])
         s(T.D, [T.cg, T.dF, T.el])
         s(T.J, [T.dE, T.fire1, T.ay])
-        s(T.av, [T.hh, T.hhh, T.rrr, T.ttt, T.yyy, T.uuu, T.iii, T.hi, T.ho])
-        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6])
+        s(T.av, [T.hh, T.fishman, T.hhh, T.rrr, T.ttt, T.yyy, T.uuu, T.iii, T.hi, T.ho])
+        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.guide, T.f6])
         t(T.hg, T.cy)
         t(T.f3, T.bA)
         t(T.e_, T.dN)
@@ -20969,6 +21756,7 @@ T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.dayun, T.dayun0, T.xianji, T.ronghe, T.ron
 
 "VIDEO::height", "VIDEO::loop", "VIDEO::mediagroup", "VIDEO::muted", "VIDEO::preload", "VIDEO::width"]), [P.f])
         C.W = H.a(u([-34, -29, -31, -29, -58, -4, -4, -38]), [P.j])
+        C.guide = H.a(u([44, 39, 55, 39, 68, 24, 24, 75]), [P.j])
         C.X = H.a(u(["", "", "", "", "", "", "", "", "", ""]), [P.f])
         C.Y = H.a(u([-86, 1000, 1000, 1000, 88, 72, 1000, 62]), [P.j])
         C.Z = H.a(u(["HEAD", "AREA", "BASE", "BASEFONT", "BR", "COL", "COLGROUP", "EMBED", "FRAME", "FRAMESET", "HR", "IMAGE", "IMG", "INPUT", "ISINDEX", 
@@ -21013,7 +21801,7 @@ T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.dayun, T.dayun0, T.xianji, T.ronghe, T.ron
         $.ac = P.cs(P.f, Z.ax)
         $.or = function() {
             var u = P.f
-            return P.dq(["aokijiz", "R0lGODlhEAAQAPcAAAAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAACH5BAEAAAQALAAAAAAQABAAQAiAAAkIHAigIICBBKW5kravocOGCqUVdIjtFcN92Ka5cmgQAMNXD0FKLCjQoLSLJw2W3HeRZUNsDhkWbDkN5r5sqGIeJDhxn0qEPAE0/Fly5j6QDkV2pIk0VTadHi0+fCjN4sSWqRpOi+lTaMNXrrbuQ5UNqc+iHlGO3AmUQMe2AQEAOw==", "flash", "R0lGODlhEAAQAJEAAPb/AP///wAAAP///yH5BAEAAAMALAAAAAAQABAAAAI83ISpaCYBoxTtPBmZTTgsAShTEoJAOZ6luZInw4avGjq0GVOI+vH7e4H8Sq3R7hP0LBwiZaKyQUKZn0oBADs=", "covid", "R0lGODlhEAAQAIIAMf/GAOpK/f///wAAAP///wAAAAAAAAAAACH5BAEAAAQALAAAAAAQABAAAgNKSLrTvZC4AeqIqgEttoNU1wSOx1BBmoabNJGDGpjURlqBAJf6ba+WWgwmy3kcRYFO6AKolMuJBCAqmjIUJKd12moemNrxgnF9IgkAOw==", "ikaruga", "R0lGODlhEAAQAMIEAAAAAAcHB7MABFuV/////////////////yH5BAEKAAcALAAAAAAQABAAAANKeLrRsZA1Qlw8jmoCGgzaMAiC9iiTOFBk6WGUypLUk4pbW00EvhG0XWz1C2Z8o9kO1uuNSqUKCqR60l5MZ1AqAf0skczudJliFwkAOw==", "tiebaking", "R0lGODlhEAAQAJEAAP399P/kAAAAAP///yH5BAEAAAMALAAAAAAQABAAAAI2nC2px5MBY2oiWnnq3QJt7gQJQEJj+ZyAKZDr83FabMG0pM1XHoqc6WEpZp1grJjRsRrJYaMAADs=", "luigi", "R0lGODlhEAAQAJEAACT/APz8/AAAAP///yH5BAEAAAMALAAAAAAQABAAAAJBnC2px6MQAlgsgRvvFCdJGH1BgoDhKXEWqLGboH2tvEItpq3ZvXvnfPIphooI0YgcLXyjpLKDQnE6gqhxSiVSBgUAOw==", "mosquito", "R0lGODlhEAAQAKECAAAAAP8AAP///////yH5BAEKAAMALAAAAAAQABAAAAJB3ICpaCnxRIRKoAkpsJu/AHpch4DgxR0kcK6GKrGB+zrylrzH2OL62or9SKcYYIgr5mq82eXI5AQtw1gxhVwwDAUAOw==", "saitama", "R0lGODlhEAAQAMIGAAAAAAgICGxsbP/AmP/PV/////jIUfjIUSH5BAEKAAcALAAAAAAQABAAAANKeLrRsZC1MVw8juraYNhUIVYSGIodZprPtG7ZC8YyFxSC8OZFAIi4nJAnAhgLx2DxZwQQCMZn7hmFOp/YKZZa3Xqth6bR1xADDgkAOw==", "seed", "R0lGODlhEAAQAMIDAAAAAG9tbUCy5////////////////////yH5BAEKAAQALAAAAAAQABAAAANFSLrQsJC1MVwkjuraVN6gA4CDIJCNSW5BkJon2LZpAMdzMLiAYN85HQ/28wWHpmJrN3sRjUya4xm0YJzNTmTKe1wkWkgCADs=", "slime", "R0lGODlhEAAQAMIEAAABAFaSRV6qSLn9qgAAAAAAAAAAAAAAACH5BAEKAAQALAAAAAAQABAAAANCSKrQvpA4QcWDrWoLsB5bxwDVYApB2jClaaaqRMIuCk92CuYBR8G9DSUjLBI3wMpRQzvhis4OqVUbjopKkczBvSQAADs=", "dragon", "R0lGODlhEAAQAJEAAP///wgICAAAAP///yH5BAEAAAMALAAAAAAQABAAQAI+nB8Zh+ACX3QrAShkTu1mCSyI5ZSKQWIaVZWTRzGDworyTJ5yUPZm9+h9WkGXj2ZMciyZTzNkQ/Z0N4XtUAAAOw==", "yuri", "R0lGODlhEAAQAKEDAAAAAN4H28asxv///yH5BAEKAAMALAAAAAAQABAAAAI+hI85EB3s4DNBiFcvs3NjvmlL9WkesEDnKI7fw8Lpi6roMJ42jh8NNeEJVb+bsFc0HIfB5ZFhdPIO0mf0WAAAOw==", "hanxu", "R0lGODlhEAAQAKIAAAAAAAD//0BAQJAAAP///wAAAAAAAAAAACH5BAUKAAAALAAAAAAQABAAAAM7CArS/k25QKsVTNhdsbYEwU1VGG4NaJ6dMLxwHDdyDdN2jeezYHIUU4MFDBAcomKHoWwxlQ4JZLoAJAAAOw=="], u, u)
+            return P.dq(["aokijiz", "R0lGODlhEAAQAPcAAAAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAACH5BAEAAAQALAAAAAAQABAAQAiAAAkIHAigIICBBKW5kravocOGCqUVdIjtFcN92Ka5cmgQAMNXD0FKLCjQoLSLJw2W3HeRZUNsDhkWbDkN5r5sqGIeJDhxn0qEPAE0/Fly5j6QDkV2pIk0VTadHi0+fCjN4sSWqRpOi+lTaMNXrrbuQ5UNqc+iHlGO3AmUQMe2AQEAOw==", "flash", "R0lGODlhEAAQAJEAAPb/AP///wAAAP///yH5BAEAAAMALAAAAAAQABAAAAI83ISpaCYBoxTtPBmZTTgsAShTEoJAOZ6luZInw4avGjq0GVOI+vH7e4H8Sq3R7hP0LBwiZaKyQUKZn0oBADs=", "covid", "R0lGODlhEAAQAIIAMf/GAOpK/f///wAAAP///wAAAAAAAAAAACH5BAEAAAQALAAAAAAQABAAAgNKSLrTvZC4AeqIqgEttoNU1wSOx1BBmoabNJGDGpjURlqBAJf6ba+WWgwmy3kcRYFO6AKolMuJBCAqmjIUJKd12moemNrxgnF9IgkAOw==", "ikaruga", "R0lGODlhEAAQAMIEAAAAAAcHB7MABFuV/////////////////yH5BAEKAAcALAAAAAAQABAAAANKeLrRsZA1Qlw8jmoCGgzaMAiC9iiTOFBk6WGUypLUk4pbW00EvhG0XWz1C2Z8o9kO1uuNSqUKCqR60l5MZ1AqAf0skczudJliFwkAOw==", "tiebaking", "R0lGODlhEAAQAJEAAP399P/kAAAAAP///yH5BAEAAAMALAAAAAAQABAAAAI2nC2px5MBY2oiWnnq3QJt7gQJQEJj+ZyAKZDr83FabMG0pM1XHoqc6WEpZp1grJjRsRrJYaMAADs=", "luigi", "R0lGODlhEAAQAJEAACT/APz8/AAAAP///yH5BAEAAAMALAAAAAAQABAAAAJBnC2px6MQAlgsgRvvFCdJGH1BgoDhKXEWqLGboH2tvEItpq3ZvXvnfPIphooI0YgcLXyjpLKDQnE6gqhxSiVSBgUAOw==", "mosquito", "R0lGODlhEAAQAKECAAAAAP8AAP///////yH5BAEKAAMALAAAAAAQABAAAAJB3ICpaCnxRIRKoAkpsJu/AHpch4DgxR0kcK6GKrGB+zrylrzH2OL62or9SKcYYIgr5mq82eXI5AQtw1gxhVwwDAUAOw==", "saitama", "R0lGODlhEAAQAMIGAAAAAAgICGxsbP/AmP/PV/////jIUfjIUSH5BAEKAAcALAAAAAAQABAAAANKeLrRsZC1MVw8juraYNhUIVYSGIodZprPtG7ZC8YyFxSC8OZFAIi4nJAnAhgLx2DxZwQQCMZn7hmFOp/YKZZa3Xqth6bR1xADDgkAOw==", "seed", "R0lGODlhEAAQAMIDAAAAAG9tbUCy5////////////////////yH5BAEKAAQALAAAAAAQABAAAANFSLrQsJC1MVwkjuraVN6gA4CDIJCNSW5BkJon2LZpAMdzMLiAYN85HQ/28wWHpmJrN3sRjUya4xm0YJzNTmTKe1wkWkgCADs=", "slime", "R0lGODlhEAAQAMIEAAABAFaSRV6qSLn9qgAAAAAAAAAAAAAAACH5BAEKAAQALAAAAAAQABAAAANCSKrQvpA4QcWDrWoLsB5bxwDVYApB2jClaaaqRMIuCk92CuYBR8G9DSUjLBI3wMpRQzvhis4OqVUbjopKkczBvSQAADs=", "dragon", "R0lGODlhEAAQAJEAAP///wgICAAAAP///yH5BAEAAAMALAAAAAAQABAAQAI+nB8Zh+ACX3QrAShkTu1mCSyI5ZSKQWIaVZWTRzGDworyTJ5yUPZm9+h9WkGXj2ZMciyZTzNkQ/Z0N4XtUAAAOw==", "yuri", "R0lGODlhEAAQAKEDAAAAAN4H28asxv///yH5BAEKAAMALAAAAAAQABAAAAI+hI85EB3s4DNBiFcvs3NjvmlL9WkesEDnKI7fw8Lpi6roMJ42jh8NNeEJVb+bsFc0HIfB5ZFhdPIO0mf0WAAAOw==", "hanxu", "R0lGODlhEAAQAKIAAAAAAAD//0BAQJAAAP///wAAAAAAAAAAACH5BAUKAAAALAAAAAAQABAAAAM7CArS/k25QKsVTNhdsbYEwU1VGG4NaJ6dMLxwHDdyDdN2jeezYHIUU4MFDBAcomKHoWwxlQ4JZLoAJAAAOw==", "guide", "R0lGODlhEAAQAPcAAAAAAA8sIRk/Li9qS0OZXHjEip7Qlff39zs7R////woKCgsLCwwMDA0NDQ4ODg8PDxAQEBERERISEhMTExQUFBUVFRYWFhcXFxgYGBkZGRoaGhsbGxwcHB0dHR4eHh8fHyAgICEhISIiIiMjIyQkJCUlJSYmJicnJygoKCkpKSoqKisrKywsLC0tLS4uLi8vLzAwMDExMTIyMjMzMzQ0NDU1NTY2Njc3Nzg4ODk5OTo6Ojs7Ozw8PD09PT4+Pj8/P0BAQEFBQUJCQkNDQ0REREVFRUZGRkdHR0hISElJSUpKSktLS0xMTE1NTU5OTk9PT1BQUFFRUVJSUlNTU1RUVFVVVVZWVldXV1hYWFlZWVpaWltbW1xcXF1dXV5eXl9fX2BgYGFhYWJiYmNjY2RkZGVlZWZmZmdnZ2hoaGlpaWpqamtra2xsbG1tbW5ubm9vb3BwcHFxcXJycnNzc3R0dHV1dXZ2dnd3d3h4eHl5eXp6ent7e3x8fH19fX5+fn9/f4CAgIGBgYKCgoODg4SEhIWFhYaGhoeHh4iIiImJiYqKiouLi4yMjI2NjY6Ojo+Pj5CQkJGRkZKSkpOTk5SUlJWVlZaWlpeXl5iYmJmZmZqampubm5ycnJ2dnZ6enp+fn6CgoKGhoaKioqOjo6SkpKWlpaampqenp6ioqKmpqaqqqqurq6ysrK2tra6urq+vr7CwsLGxsbKysrOzs7S0tLW1tba2tre3t7i4uLm5ubq6uru7u7y8vL29vb6+vr+/v8DAwMHBwcLCwsPDw8TExMXFxcbGxsfHx8jIyMnJycrKysvLy8zMzM3Nzc7Ozs/Pz9DQ0NHR0dLS0tPT09TU1NXV1dbW1tfX19jY2NnZ2dra2tvb29zc3N3d3d7e3t/f3+Dg4OHh4eLi4uPj4+Tk5OXl5ebm5ufn5+jo6Onp6erq6uvr6+zs7O3t7e7u7u/v7/Dw8PHx8fLy8vPz8/T09PX19fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f7+/v///yH5BAEAAAAALAAAAAAQABAAAAhcAAEIHEiwoMGDCBMSVMCwYUODDAMEEECRIsOCCgYMIMCRQIECBi4OzLix40cDAkQCINmRwIGXKEWy7PjyAEqLDDWWbMkRZEiSO3n6jCixqFGjDpMqVamwqVOnAQEAOw=="],u, u)
         }()
         $.kG = function() {
             var u = P.f
@@ -21248,6 +22036,9 @@ u), H.a([0, 255, 255], u), H.a([128, 120, 255], u), H.a([128, 224, 255], u), H.a
         u($, "rN", "aC", function() {
             return O.i("\u6e80\u50a7\u3460")
         })
+        u($, "rN1", "fishing", function() {
+            return O.i("\u67fe\ub47e\u41ad\ube14")
+        })
         u($, "qS", "c5", function() {
             return O.i("\u68fa\ub481\u4120")
         })
@@ -21286,6 +22077,9 @@ u), H.a([0, 255, 255], u), H.a([128, 120, 255], u), H.a([128, 224, 255], u), H.a
         })
         u($, "rO", "nq", function() {
             return O.i("\u6703\u4cd9\uc591\u3460")
+        })
+        u($, "rO1", "guide", function() {
+            return O.i("\u6884\ub1fd\u4120")
         })
         u($, "r8", "n_", function() {
             return O.i("\u6b81\ub480\u6377\u4bc6\u3478")
