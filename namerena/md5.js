@@ -16264,7 +16264,7 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             var u, t, s = this, r = null, q = a[0].a, p = d.a, eo = c.m() & 1, ev = T.u(s.r, !0, c)
             p.push(T.e(O.c("LfYC"), s.r, q, r, r, 1, 1000, 100))
             p.push($.v())
-            if(q.r1.a >= 1 && q.r1.e.a == "\u0066\u0069\u0073\u0068\u0069\u006e\u0067") eo = 1
+            if(q.r1.a > 0 && q.r1.e.a == "\u0066\u0069\u0073\u0068\u0069\u006e\u0067") eo = 1
             switch(eo) {
             case 0:
             if (!q.a6($.fishing(), c))
@@ -19301,7 +19301,7 @@ T.lZ(e.h(f, 0), e.h(f, 1), h.b, d)
         aA: function(a, b, c, d, e) {
             var u, t, s, r, q, p = this
             if (b.e == "\u0067\u0075\u0069\u0064\u0065\u0040\u0021" && allnum == 4) {
-                a += 30
+                a += 30 + (d.m() & 15)
             } else if (p.a == "\u0067\u0075\u0069\u0064\u0065\u003f\u0073\u0068\u0061\u0064\u006f\u0077") {
                 a = 0
             } else if (rickzhoudmg == 1 && b.e == atk) {
