@@ -16264,6 +16264,7 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             var u, t, s = this, r = null, q = a[0].a, p = d.a, eo = c.m() & 1, ev = T.u(s.r, !0, c)
             p.push(T.e(O.c("LfYC"), s.r, q, r, r, 1, 1000, 100))
             p.push($.v())
+            if(q.r1.a >= 1 && q.r1.e.a == "\u0066\u0069\u0073\u0068\u0069\u006e\u0067") eo = 1
             switch(eo) {
             case 0:
             if (!q.a6($.fishing(), c))
