@@ -4673,6 +4673,44 @@ H.ce(m,m,m,m).constructor.prototype)
             m.q = l
             return m
         },
+        m_e: function(a) {
+            var u, t, s, r, q, p, o, n, m, l = a.a, k = a.b, j = a.c, i = a.d, h = H.a([], [T.H]), g = H.a([], [T.y]), f = P.U(P.f, T.p), e = new F.b([T.M])
+            e.c = e
+            e.b = e
+            u = new F.b([T.L])
+            u.c = u
+            u.b = u
+            t = new F.b([T.G])
+            t.c = t
+            t.b = t
+            s = new F.b([T.J])
+            s.c = s
+            s.b = s
+            r = new F.b([T.K])
+            r.c = r
+            r.b = r
+            q = new F.b([T.D])
+            q.c = q
+            q.b = q
+            p = new F.b([T.A])
+            p.c = p
+            p.b = p
+            o = new F.b([T.C])
+            o.c = o
+            o.b = o
+            n = new F.b([T.I])
+            n.c = n
+            n.b = n
+            m = [P.j]
+            m = new T.f1(l,k,j,i,h,g,f,e,u,t,s,r,q,p,o,n,H.a([], m),H.a([], m),H.a([], m),H.a([], m))
+            m.Y(l, k, j, i)
+            m.ci = a
+            m.e = T.du(a instanceof T.dC ? m.a5 = a.a5 : m.a5 = a)
+            l = a.q
+            l = H.a(l.slice(0), [H.n(l, 0)])
+            m.q = l
+            return m
+        },
         p9: function(a, b, c, d, e) {
             var u, t
             if (c > 0 && !(b.fr <= 0)) {
@@ -16265,6 +16303,7 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             p.push(T.e(O.c("LfYC"), s.r, q, r, r, 1, 1000, 100))
             p.push($.v())
             if(q.r1.a > 0 && q.r1.e.a == "\u0066\u0069\u0073\u0068\u0069\u006e\u0067") eo = 1
+            if(q.r1.a == 2 && q.r1.f.a == "\u0066\u0069\u0073\u0068\u0069\u006e\u0067") eo = 1
             switch(eo) {
             case 0:
             if (!q.a6($.fishing(), c))
