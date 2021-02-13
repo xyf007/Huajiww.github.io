@@ -6316,7 +6316,6 @@ H.ce(m,m,m,m).constructor.prototype)
             _.j = 0
             _.X = _.W = !1
             _.F = null
-            _.de = 1
         },
         fishman: function fishman(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
             var _ = this
@@ -6352,10 +6351,8 @@ H.ce(m,m,m,m).constructor.prototype)
             _.V = _.O = _.L = 0
             _.J = 32768
             _.j = 0
-            _.de = 1
             _.X = _.W = !1
             _.F = null
-            _.de = 1
         },
         hhh: function hhh(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
             var _ = this
@@ -17059,13 +17056,9 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             t.r = this
             this.k2 = t
             t = this.id
-            t.push(new T.hJ())
             t.push(new T.i0())
-            u = new T.dM()
-            u.f = 16
-            t.push(u)
             u = new T.i_()
-            u.f = 64
+            u.f = 32
             t.push(u)
         }
     }
@@ -17167,31 +17160,31 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             u.f = 32
             this.id.push(u)
             u = new T.dQ()
-            u.f = 99999999999
+            u.f = 9999999
             this.id.push(u)
             u = new T.dX()
-            u.f = 99999999999
+            u.f = 9999999
             this.id.push(u)
             u = new T.bU()
-            u.f = 99999999999
+            u.f = 9999999
             this.id.push(u)
             u = new T.i9()
-            u.f = 99999999999
+            u.f = 9999999
             this.id.push(u)
             u = new T.i5()
-            u.f = 99999999999
+            u.f = 9999999
             this.id.push(u)
             u = new T.ih()
-            u.f = 666
+            u.f = 333
             this.id.push(u)
             u = new T.io()
-            u.f = 99999999999
+            u.f = 9999999
             this.id.push(u)
             u = new T.dV()
-            u.f = 99999999999
+            u.f = 9999999
             this.id.push(u)
             u = new T.ia()
-            u.f = 99999999999
+            u.f = 9999999
             this.id.push(u)
             u = new T.angry()
             u.f = 0
@@ -17608,15 +17601,15 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             if (this.aI === 1) {
                 for (u = this.q,
                 t = 0; t < 10; ++t)
-                    u[t] = 32
+                    u[t] = 16
                 for (t = 10; t < 50; ++t)
-                    u[t] = (u[t] | 100) >>> 0
+                    u[t] = (u[t] | 16) >>> 0
             } else {
                 for (u = this.q,
                 t = 0; t < 10; ++t)
-                    u[t] = 32
+                    u[t] = -5
                 for (t = 10; t < 50; ++t)
-                    u[t] = (u[t] | 100) >>> 0
+                    u[t] = (u[t] | 32) >>> 0
             }
         },
         a6: function(a, b) {
@@ -20813,7 +20806,7 @@ H.d(p.aT(p.dy)) + o[6] + "\t" + H.d(p.cz())
             this.cI(a)
             if (this.c.f == "\u6db5\u865a\u002b\u0042\u006f\u0073\u0073\u53d8\u8eab\u5668") {
                 this.c.r = "\u9fa5\u4ffe\u7684\u9001\u83dc\u6a31\u998f"
-                this.r = H.a([70, 70, 70, 70, 70, 70, 70, 105], [P.j])
+                this.r = H.a([26, 37, 34, 151, 48, 35, 49, 105], [P.j])
             } else {
                 this.r = H.a([0, 0, 0, 0, 0, 0, 0, 0], [P.j])
             }
@@ -20829,7 +20822,7 @@ H.d(p.aT(p.dy)) + o[6] + "\t" + H.d(p.cz())
             this.c.k1[7].f = 0
             this.c.k1[9].f = 0
             this.c.k1[14].f = 0
-            this.c.k1[2].f = 128
+            this.c.k1[2].f = 256
             this.c.k1.push(new T.baoda())
             this.c.k1[40].f = 8
             this.c.k1[40].r = u
@@ -21691,11 +21684,11 @@ T.aK, T.thirdattack, T.arrow, T.thunderattack, T.shadowattack, T.bm, T.bme, T.bn
         C.I = new P.bF(0)
         C.M = new P.fR(null)
         C.N = H.a(u([127, 2047, 65535, 1114111]), [P.j])
-        C.U = H.a(u([0, 38, 31, 46, 28, 18, 15, 69]), [P.j])
+        C.U = H.a(u([0, 38, 27, 6, 3, 8, 15, 131]), [P.j])
         C.S = H.a(u([6, 21, 5, 19, 38, 21, 12, -194]), [P.j])
         C.P = H.a(u([10, 9, 0, 12, 0, 12, 0, 60]), [P.j])
         C.T = H.a(u([26, 31, 46, 9, 40, 5, 32, 24]), [P.j])
-        C.Q = H.a(u([40, 12, 19, 54, 27, 38, 29, 121]), [P.j])
+        C.Q = H.a(u([30, 5, 10, 46, 20, 30, 28, 121]), [P.j])
         C.R = H.a(u([48, 28, 21, 45, 10, 19, 33, 150]), [P.j])
         C.O = H.a(u([72, 39, 69, 76, 67, 66, 0, 84]), [P.j])
         C.V = H.a(u(["*::class", "*::dir", "*::draggable", "*::hidden", "*::id", "*::inert", "*::itemprop", "*::itemref", "*::itemscope", "*::lang", 
