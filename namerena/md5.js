@@ -4,6 +4,9 @@ rickzhouspe = 0
 icenum = 0
 firenum = 0
 powernum = 0
+condition = 0
+tif = 0
+tik = 0
 {}
 (function dartProgram() {
     function copyProperties(a, b) {
@@ -5218,6 +5221,44 @@ H.ce(m,m,m,m).constructor.prototype)
                     g.at(a, u)
                     return g
                 }
+                if (a == $.ezfic()) {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.ezfic(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
                 if (a == $.n_()) {
                     t = H.d(a) + H.d($.ah())
                     s = H.a([], [T.H])
@@ -6837,6 +6878,12 @@ H.ce(m,m,m,m).constructor.prototype)
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+        ezf: function ezf() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
         kill: function kill() {
             var _ = this
             _.e = !1
@@ -7513,6 +7560,42 @@ H.ce(m,m,m,m).constructor.prototype)
             _.F = null
         },
         guide: function guide(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+        ezfic: function ezfic(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
             var _ = this
             _.a = a
             _.b = b
@@ -17805,6 +17888,137 @@ j.name == 'previousSibling' || j.id == 'children' || j.name == 'children')
             t.push(u)
         }
     }
+    T.ezfic.prototype = {
+        gah: function() {
+            return C.ezfic
+        },
+        gaQ: function() {
+            return H.a([], [P.f])
+        },
+        gaB: function() {
+            return H.a([$.b9()], [P.f])
+        },
+        aa: function() {
+            var u, t = new T.bm()
+            t.r = this
+            this.k2 = new T.ezf()
+            this.k2.r = this
+            t = this.id
+        }
+    }
+    T.ezf.prototype = {
+        t: function(a, b, c, d) {
+            var u = a[0].a
+              , t = T.u(this.r, !0, c)
+              , jsa = 0
+              , people = 0
+              , peoplee = 0
+              , condi = 0
+              , condie = 0
+              , tio = 0
+              , me
+              , you
+              , youd
+              , med
+            if(this.r.fr <= 150 && tik == 0) {
+            d.a.push(T.e(O.c("aHWv"), this.r, this.r, null, null, 0, 1000, 100))
+            tik = 1
+            if(condition == 0) {
+            d.a.push($.v())
+            d.a.push(T.e(O.c("vegi"), this.r, this.r, null, null, 0, 1000, 100))
+            d.a.push($.v())
+            condition = 1
+            }
+            } else if(tif == 0) {
+                        for(ioase = 0; ioase < this.r.x.a.a.length; ioase++){
+            for(kiase = 0; kiase < this.r.x.a.a[ioase].d.length; kiase++) {
+            if(this.r.x.a.a[ioase].d[kiase].e == "ezfic@!"){
+            this.r.x.a.a[ioase].d.push("ufr") 
+            for(kiasee = 0; kiasee < this.r.x.a.a[ioase].d.length; kiasee++) {
+            jsa++
+            }
+            jsa--
+            }
+            }
+            }
+            for(ioas = 0; ioas < this.r.x.a.a.length; ioas++){
+            if(condie == 1) break
+            for(kias = 0; kias < this.r.x.a.a[ioas].d.length; kias++) {
+            if(this.r.x.a.a[ioas].d[kias].fr > 0 && this.r.x.a.a[ioas].d[jsa] !== "ufr") {
+            peoplee++
+            if(peoplee > 1){ 
+            condie = 1
+            break
+            }
+              }
+            }
+            }
+            if(condie == 0){
+            me = this.r.x.e.length
+            you =  this.r.x.a.e.length
+            if(you - me == 1)  {
+            d.a.push(T.e(O.c("IPYv"), this.r, u, null, null, 0, 1000, 100))
+            } else {            
+            d.a.push(T.e(O.c("sHgL"), this.r, u, null, null, 0, 1000, 100))
+            }
+            if(condition == 0) {
+            d.a.push($.v())
+            d.a.push(T.e(O.c("cfkj"), this.r, this.r, null, null, 0, 1000, 100))
+            d.a.push($.v())
+            d.a.push(T.e(O.c("tWYX"), this.r, this.r, null, null, 0, 1000, 100))
+            d.a.push($.v())
+            d.a.push(T.e(O.c("vegi"), this.r, this.r, null, null, 0, 1000, 100))
+            d.a.push($.v())
+            condition = 1
+            }
+            tif = 1
+            tio = 1
+            }
+          }
+            if(condition == 0 && tio == 0) {
+            d.a.push(T.e(O.c("cfkj"), this.r, this.r, null, null, 0, 1000, 100))
+            d.a.push($.v())
+            d.a.push(T.e(O.c("tWYX"), this.r, this.r, null, null, 0, 1000, 100))
+            d.a.push($.v())
+            d.a.push(T.e(O.c("vegi"), this.r, this.r, null, null, 0, 1000, 100))
+            d.a.push($.v())
+            condition = 1
+            } else if(condition == 1 && tio == 0) {
+                        for(ioase = 0; ioase < this.r.x.a.a.length; ioase++){
+            for(kiase = 0; kiase < this.r.x.a.a[ioase].d.length; kiase++) {
+            if(this.r.x.a.a[ioase].d[kiase].e == "ezfic@!"){
+            this.r.x.a.a[ioase].d.push("ufr") 
+            for(kiasee = 0; kiasee < this.r.x.a.a[ioase].d.length; kiasee++) {
+            jsa++
+            }
+            jsa--
+            }
+            }
+            }
+            for(ioas = 0; ioas < this.r.x.a.a.length; ioas++){
+            if(condi == 1) break
+            for(kias = 0; kias < this.r.x.a.a[ioas].d.length; kias++) {
+            if(this.r.x.a.a[ioas].d[kias].fr > 0 && this.r.x.a.a[ioas].d[jsa] !== "ufr") {
+            people++
+            if(people > 1){ 
+            condi = 1
+            break
+            }
+              }
+            }
+          }
+            if(condi == 0) {
+            d.a.push(T.e(O.c("KPCD"), this.r, u, null, null, 0, 1000, 100))
+            } else if(condi == 1) {
+            d.a.push(T.e(O.c("bKWt"), this.r, this.r, null, null, 0, 1000, 100))
+            }
+            condition = 3
+            }
+            d.a.push($.v())
+            d.a.push(T.e(O.c("Xaul"), this.r, u, null, null, 0, 1000, 100))
+            u.a0(t, !1, this.r, T.a3(), c, d)
+        }
+    }
     T.luos.prototype = {
         t: function(a, b, c, d) {
             var u = a[0].a
@@ -19418,7 +19632,18 @@ T.lZ(e.h(f, 0), e.h(f, 1), h.b, d)
             }
             t = new T.ch()
             t.a = s.e
+            if(s.e == "\u0065\u007a\u0066\u0069\u0063\u0040\u0021") {
+            u = O.c("rKCx")
             r.push(T.e(u, b, t, null, null, 50, 1000, 100))
+            r.push($.v())
+            u = O.c("lZCt")
+            r.push(T.e(u, b, t, null, null, 50, 1000, 100))
+            r.push($.v())
+            u = O.c("CPvA")
+            r.push(T.e(u, b, t, null, null, 50, 1000, 100))
+            } else {
+            r.push(T.e(u, b, t, null, null, 50, 1000, 100))
+            }
             for (r = s.I,
             r = new F.ar(r,r.b,[H.n(r, 0)]); r.p(); )
                 if (r.b.aX(a, b, c, d))
@@ -21355,7 +21580,7 @@ F.hE, F.hF, O.kb, T.hN, T.hY, T.fq, T.fp, T.fr, T.fo, T.hq, T.hp, T.hr, T.hA, T.
 
 T.zuzhouex, T.shuxingjie, T.shuxingskill, T.dR, T.hX, T.baqi0, T.flash, T.dS, T.dT, T.i1, T.i6, T.firehand, T.i8, T.dW, T.ia, T.i7, T.ig, T.fishman1, T.iee, T.irr, T.itt, T.iyy, 
 
-T.iuu, T.dii, T.ij, T.blind4, T.hey, T.luos, T.kill, T.hW, T.ik, T.il, T.baoda, T.dM, T.icesword, T.blind2, T.firestar, T.angry, T.rainbow, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, 
+T.iuu, T.dii, T.ij, T.blind4, T.hey, T.luos, T.ezf, T.kill, T.hW, T.ik, T.il, T.baoda, T.dM, T.icesword, T.blind2, T.firestar, T.angry, T.rainbow, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, 
 
 T.aK, T.thirdattack, T.arrow, T.thunderattack, T.shadowattack, T.bm, T.bme, T.bn, T.hT, T.dY, T.ic, T.dayun, T.dayun0, T.xianji, T.ronghe, T.ronghe1, T.ronghe2])
         s(T.M, [T.bf, T.co, T.dj, T.down, T.ice1, T.djj, T.cG, T.cGf, T.blind1, T.baqi, T.flash1, T.aN, T.hz])
@@ -21364,7 +21589,7 @@ T.aK, T.thirdattack, T.arrow, T.thunderattack, T.shadowattack, T.bm, T.bme, T.bn
         s(T.D, [T.cg, T.dF, T.el])
         s(T.J, [T.dE, T.fire1, T.ay])
         s(T.av, [T.hh, T.fishman, T.hhh, T.rrr, T.ttt, T.yyy, T.uuu, T.iii, T.hi, T.ho])
-        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.guide, T.f6])
+        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.guide, T.ezfic, T.f6])
         t(T.hg, T.cy)
         t(T.f3, T.bA)
         t(T.e_, T.dN)
@@ -21790,6 +22015,7 @@ T.aK, T.thirdattack, T.arrow, T.thunderattack, T.shadowattack, T.bm, T.bme, T.bn
 "VIDEO::height", "VIDEO::loop", "VIDEO::mediagroup", "VIDEO::muted", "VIDEO::preload", "VIDEO::width"]), [P.f])
         C.W = H.a(u([-34, -29, -31, -29, -58, -4, -4, -38]), [P.j])
         C.guide = H.a(u([44, 39, 55, 39, 68, 24, 24, 75]), [P.j])
+        C.ezfic = H.a(u([62, 57, 2, -9, 48, 95, -34, 50]), [P.j])
         C.X = H.a(u(["", "", "", "", "", "", "", "", "", ""]), [P.f])
         C.Y = H.a(u([-86, 1000, 1000, 1000, 88, 72, 1000, 62]), [P.j])
         C.Z = H.a(u(["HEAD", "AREA", "BASE", "BASEFONT", "BR", "COL", "COLGROUP", "EMBED", "FRAME", "FRAMESET", "HR", "IMAGE", "IMG", "INPUT", "ISINDEX", 
@@ -21834,7 +22060,7 @@ T.aK, T.thirdattack, T.arrow, T.thunderattack, T.shadowattack, T.bm, T.bme, T.bn
         $.ac = P.cs(P.f, Z.ax)
         $.or = function() {
             var u = P.f
-            return P.dq(["aokijiz", "R0lGODlhEAAQAPcAAAAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAACH5BAEAAAQALAAAAAAQABAAQAiAAAkIHAigIICBBKW5kravocOGCqUVdIjtFcN92Ka5cmgQAMNXD0FKLCjQoLSLJw2W3HeRZUNsDhkWbDkN5r5sqGIeJDhxn0qEPAE0/Fly5j6QDkV2pIk0VTadHi0+fCjN4sSWqRpOi+lTaMNXrrbuQ5UNqc+iHlGO3AmUQMe2AQEAOw==", "flash", "R0lGODlhEAAQAJEAAPb/AP///wAAAP///yH5BAEAAAMALAAAAAAQABAAAAI83ISpaCYBoxTtPBmZTTgsAShTEoJAOZ6luZInw4avGjq0GVOI+vH7e4H8Sq3R7hP0LBwiZaKyQUKZn0oBADs=", "covid", "R0lGODlhEAAQAIIAMf/GAOpK/f///wAAAP///wAAAAAAAAAAACH5BAEAAAQALAAAAAAQABAAAgNKSLrTvZC4AeqIqgEttoNU1wSOx1BBmoabNJGDGpjURlqBAJf6ba+WWgwmy3kcRYFO6AKolMuJBCAqmjIUJKd12moemNrxgnF9IgkAOw==", "ikaruga", "R0lGODlhEAAQAMIEAAAAAAcHB7MABFuV/////////////////yH5BAEKAAcALAAAAAAQABAAAANKeLrRsZA1Qlw8jmoCGgzaMAiC9iiTOFBk6WGUypLUk4pbW00EvhG0XWz1C2Z8o9kO1uuNSqUKCqR60l5MZ1AqAf0skczudJliFwkAOw==", "tiebaking", "R0lGODlhEAAQAJEAAP399P/kAAAAAP///yH5BAEAAAMALAAAAAAQABAAAAI2nC2px5MBY2oiWnnq3QJt7gQJQEJj+ZyAKZDr83FabMG0pM1XHoqc6WEpZp1grJjRsRrJYaMAADs=", "luigi", "R0lGODlhEAAQAJEAACT/APz8/AAAAP///yH5BAEAAAMALAAAAAAQABAAAAJBnC2px6MQAlgsgRvvFCdJGH1BgoDhKXEWqLGboH2tvEItpq3ZvXvnfPIphooI0YgcLXyjpLKDQnE6gqhxSiVSBgUAOw==", "mosquito", "R0lGODlhEAAQAKECAAAAAP8AAP///////yH5BAEKAAMALAAAAAAQABAAAAJB3ICpaCnxRIRKoAkpsJu/AHpch4DgxR0kcK6GKrGB+zrylrzH2OL62or9SKcYYIgr5mq82eXI5AQtw1gxhVwwDAUAOw==", "saitama", "R0lGODlhEAAQAMIGAAAAAAgICGxsbP/AmP/PV/////jIUfjIUSH5BAEKAAcALAAAAAAQABAAAANKeLrRsZC1MVw8juraYNhUIVYSGIodZprPtG7ZC8YyFxSC8OZFAIi4nJAnAhgLx2DxZwQQCMZn7hmFOp/YKZZa3Xqth6bR1xADDgkAOw==", "seed", "R0lGODlhEAAQAMIDAAAAAG9tbUCy5////////////////////yH5BAEKAAQALAAAAAAQABAAAANFSLrQsJC1MVwkjuraVN6gA4CDIJCNSW5BkJon2LZpAMdzMLiAYN85HQ/28wWHpmJrN3sRjUya4xm0YJzNTmTKe1wkWkgCADs=", "slime", "R0lGODlhEAAQAMIEAAABAFaSRV6qSLn9qgAAAAAAAAAAAAAAACH5BAEKAAQALAAAAAAQABAAAANCSKrQvpA4QcWDrWoLsB5bxwDVYApB2jClaaaqRMIuCk92CuYBR8G9DSUjLBI3wMpRQzvhis4OqVUbjopKkczBvSQAADs=", "dragon", "R0lGODlhEAAQAJEAAP///wgICAAAAP///yH5BAEAAAMALAAAAAAQABAAQAI+nB8Zh+ACX3QrAShkTu1mCSyI5ZSKQWIaVZWTRzGDworyTJ5yUPZm9+h9WkGXj2ZMciyZTzNkQ/Z0N4XtUAAAOw==", "yuri", "R0lGODlhEAAQAKEDAAAAAN4H28asxv///yH5BAEKAAMALAAAAAAQABAAAAI+hI85EB3s4DNBiFcvs3NjvmlL9WkesEDnKI7fw8Lpi6roMJ42jh8NNeEJVb+bsFc0HIfB5ZFhdPIO0mf0WAAAOw==", "hanxu", "R0lGODlhEAAQAKIAAAAAAAD//0BAQJAAAP///wAAAAAAAAAAACH5BAUKAAAALAAAAAAQABAAAAM7CArS/k25QKsVTNhdsbYEwU1VGG4NaJ6dMLxwHDdyDdN2jeezYHIUU4MFDBAcomKHoWwxlQ4JZLoAJAAAOw==", "guide", "R0lGODlhEAAQAPcAAAAAAA8sIRk/Li9qS0OZXHjEip7Qlff39zs7R////woKCgsLCwwMDA0NDQ4ODg8PDxAQEBERERISEhMTExQUFBUVFRYWFhcXFxgYGBkZGRoaGhsbGxwcHB0dHR4eHh8fHyAgICEhISIiIiMjIyQkJCUlJSYmJicnJygoKCkpKSoqKisrKywsLC0tLS4uLi8vLzAwMDExMTIyMjMzMzQ0NDU1NTY2Njc3Nzg4ODk5OTo6Ojs7Ozw8PD09PT4+Pj8/P0BAQEFBQUJCQkNDQ0REREVFRUZGRkdHR0hISElJSUpKSktLS0xMTE1NTU5OTk9PT1BQUFFRUVJSUlNTU1RUVFVVVVZWVldXV1hYWFlZWVpaWltbW1xcXF1dXV5eXl9fX2BgYGFhYWJiYmNjY2RkZGVlZWZmZmdnZ2hoaGlpaWpqamtra2xsbG1tbW5ubm9vb3BwcHFxcXJycnNzc3R0dHV1dXZ2dnd3d3h4eHl5eXp6ent7e3x8fH19fX5+fn9/f4CAgIGBgYKCgoODg4SEhIWFhYaGhoeHh4iIiImJiYqKiouLi4yMjI2NjY6Ojo+Pj5CQkJGRkZKSkpOTk5SUlJWVlZaWlpeXl5iYmJmZmZqampubm5ycnJ2dnZ6enp+fn6CgoKGhoaKioqOjo6SkpKWlpaampqenp6ioqKmpqaqqqqurq6ysrK2tra6urq+vr7CwsLGxsbKysrOzs7S0tLW1tba2tre3t7i4uLm5ubq6uru7u7y8vL29vb6+vr+/v8DAwMHBwcLCwsPDw8TExMXFxcbGxsfHx8jIyMnJycrKysvLy8zMzM3Nzc7Ozs/Pz9DQ0NHR0dLS0tPT09TU1NXV1dbW1tfX19jY2NnZ2dra2tvb29zc3N3d3d7e3t/f3+Dg4OHh4eLi4uPj4+Tk5OXl5ebm5ufn5+jo6Onp6erq6uvr6+zs7O3t7e7u7u/v7/Dw8PHx8fLy8vPz8/T09PX19fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f7+/v///yH5BAEAAAAALAAAAAAQABAAAAhcAAEIHEiwoMGDCBMSVMCwYUODDAMEEECRIsOCCgYMIMCRQIECBi4OzLix40cDAkQCINmRwIGXKEWy7PjyAEqLDDWWbMkRZEiSO3n6jCixqFGjDpMqVamwqVOnAQEAOw=="],u, u)
+            return P.dq(["aokijiz", "R0lGODlhEAAQAPcAAAAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAACH5BAEAAAQALAAAAAAQABAAQAiAAAkIHAigIICBBKW5kravocOGCqUVdIjtFcN92Ka5cmgQAMNXD0FKLCjQoLSLJw2W3HeRZUNsDhkWbDkN5r5sqGIeJDhxn0qEPAE0/Fly5j6QDkV2pIk0VTadHi0+fCjN4sSWqRpOi+lTaMNXrrbuQ5UNqc+iHlGO3AmUQMe2AQEAOw==", "flash", "R0lGODlhEAAQAJEAAPb/AP///wAAAP///yH5BAEAAAMALAAAAAAQABAAAAI83ISpaCYBoxTtPBmZTTgsAShTEoJAOZ6luZInw4avGjq0GVOI+vH7e4H8Sq3R7hP0LBwiZaKyQUKZn0oBADs=", "covid", "R0lGODlhEAAQAIIAMf/GAOpK/f///wAAAP///wAAAAAAAAAAACH5BAEAAAQALAAAAAAQABAAAgNKSLrTvZC4AeqIqgEttoNU1wSOx1BBmoabNJGDGpjURlqBAJf6ba+WWgwmy3kcRYFO6AKolMuJBCAqmjIUJKd12moemNrxgnF9IgkAOw==", "ikaruga", "R0lGODlhEAAQAMIEAAAAAAcHB7MABFuV/////////////////yH5BAEKAAcALAAAAAAQABAAAANKeLrRsZA1Qlw8jmoCGgzaMAiC9iiTOFBk6WGUypLUk4pbW00EvhG0XWz1C2Z8o9kO1uuNSqUKCqR60l5MZ1AqAf0skczudJliFwkAOw==", "tiebaking", "R0lGODlhEAAQAJEAAP399P/kAAAAAP///yH5BAEAAAMALAAAAAAQABAAAAI2nC2px5MBY2oiWnnq3QJt7gQJQEJj+ZyAKZDr83FabMG0pM1XHoqc6WEpZp1grJjRsRrJYaMAADs=", "luigi", "R0lGODlhEAAQAJEAACT/APz8/AAAAP///yH5BAEAAAMALAAAAAAQABAAAAJBnC2px6MQAlgsgRvvFCdJGH1BgoDhKXEWqLGboH2tvEItpq3ZvXvnfPIphooI0YgcLXyjpLKDQnE6gqhxSiVSBgUAOw==", "mosquito", "R0lGODlhEAAQAKECAAAAAP8AAP///////yH5BAEKAAMALAAAAAAQABAAAAJB3ICpaCnxRIRKoAkpsJu/AHpch4DgxR0kcK6GKrGB+zrylrzH2OL62or9SKcYYIgr5mq82eXI5AQtw1gxhVwwDAUAOw==", "saitama", "R0lGODlhEAAQAMIGAAAAAAgICGxsbP/AmP/PV/////jIUfjIUSH5BAEKAAcALAAAAAAQABAAAANKeLrRsZC1MVw8juraYNhUIVYSGIodZprPtG7ZC8YyFxSC8OZFAIi4nJAnAhgLx2DxZwQQCMZn7hmFOp/YKZZa3Xqth6bR1xADDgkAOw==", "seed", "R0lGODlhEAAQAMIDAAAAAG9tbUCy5////////////////////yH5BAEKAAQALAAAAAAQABAAAANFSLrQsJC1MVwkjuraVN6gA4CDIJCNSW5BkJon2LZpAMdzMLiAYN85HQ/28wWHpmJrN3sRjUya4xm0YJzNTmTKe1wkWkgCADs=", "slime", "R0lGODlhEAAQAMIEAAABAFaSRV6qSLn9qgAAAAAAAAAAAAAAACH5BAEKAAQALAAAAAAQABAAAANCSKrQvpA4QcWDrWoLsB5bxwDVYApB2jClaaaqRMIuCk92CuYBR8G9DSUjLBI3wMpRQzvhis4OqVUbjopKkczBvSQAADs=", "dragon", "R0lGODlhEAAQAJEAAP///wgICAAAAP///yH5BAEAAAMALAAAAAAQABAAQAI+nB8Zh+ACX3QrAShkTu1mCSyI5ZSKQWIaVZWTRzGDworyTJ5yUPZm9+h9WkGXj2ZMciyZTzNkQ/Z0N4XtUAAAOw==", "yuri", "R0lGODlhEAAQAKEDAAAAAN4H28asxv///yH5BAEKAAMALAAAAAAQABAAAAI+hI85EB3s4DNBiFcvs3NjvmlL9WkesEDnKI7fw8Lpi6roMJ42jh8NNeEJVb+bsFc0HIfB5ZFhdPIO0mf0WAAAOw==", "hanxu", "R0lGODlhEAAQAKIAAAAAAAD//0BAQJAAAP///wAAAAAAAAAAACH5BAUKAAAALAAAAAAQABAAAAM7CArS/k25QKsVTNhdsbYEwU1VGG4NaJ6dMLxwHDdyDdN2jeezYHIUU4MFDBAcomKHoWwxlQ4JZLoAJAAAOw==", "guide", "R0lGODlhEAAQAPcAAAAAAA8sIRk/Li9qS0OZXHjEip7Qlff39zs7R////woKCgsLCwwMDA0NDQ4ODg8PDxAQEBERERISEhMTExQUFBUVFRYWFhcXFxgYGBkZGRoaGhsbGxwcHB0dHR4eHh8fHyAgICEhISIiIiMjIyQkJCUlJSYmJicnJygoKCkpKSoqKisrKywsLC0tLS4uLi8vLzAwMDExMTIyMjMzMzQ0NDU1NTY2Njc3Nzg4ODk5OTo6Ojs7Ozw8PD09PT4+Pj8/P0BAQEFBQUJCQkNDQ0REREVFRUZGRkdHR0hISElJSUpKSktLS0xMTE1NTU5OTk9PT1BQUFFRUVJSUlNTU1RUVFVVVVZWVldXV1hYWFlZWVpaWltbW1xcXF1dXV5eXl9fX2BgYGFhYWJiYmNjY2RkZGVlZWZmZmdnZ2hoaGlpaWpqamtra2xsbG1tbW5ubm9vb3BwcHFxcXJycnNzc3R0dHV1dXZ2dnd3d3h4eHl5eXp6ent7e3x8fH19fX5+fn9/f4CAgIGBgYKCgoODg4SEhIWFhYaGhoeHh4iIiImJiYqKiouLi4yMjI2NjY6Ojo+Pj5CQkJGRkZKSkpOTk5SUlJWVlZaWlpeXl5iYmJmZmZqampubm5ycnJ2dnZ6enp+fn6CgoKGhoaKioqOjo6SkpKWlpaampqenp6ioqKmpqaqqqqurq6ysrK2tra6urq+vr7CwsLGxsbKysrOzs7S0tLW1tba2tre3t7i4uLm5ubq6uru7u7y8vL29vb6+vr+/v8DAwMHBwcLCwsPDw8TExMXFxcbGxsfHx8jIyMnJycrKysvLy8zMzM3Nzc7Ozs/Pz9DQ0NHR0dLS0tPT09TU1NXV1dbW1tfX19jY2NnZ2dra2tvb29zc3N3d3d7e3t/f3+Dg4OHh4eLi4uPj4+Tk5OXl5ebm5ufn5+jo6Onp6erq6uvr6+zs7O3t7e7u7u/v7/Dw8PHx8fLy8vPz8/T09PX19fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f7+/v///yH5BAEAAAAALAAAAAAQABAAAAhcAAEIHEiwoMGDCBMSVMCwYUODDAMEEECRIsOCCgYMIMCRQIECBi4OzLix40cDAkQCINmRwIGXKEWy7PjyAEqLDDWWbMkRZEiSO3n6jCixqFGjDpMqVamwqVOnAQEAOw==", "ezfic", "R0lGODlhEAAQAPcAAHuEkF5qd0JYbB87Ti5KXhQvPwIOEw8mMAMVGwUbIgwgJkBISgMUFAUaFwsbGAwWFAMOCwQSDAIKBubr6AIOBg0aES00LwYKBwsUDAIOAgIKAgUSBQIGAgYOBhccFQYOAgYKAh4hGgwSAxUbDHl7dQsOAg0OCtDRzBYaBBQVDSgpHhQUAx0cDRwaBWFgVyUiExwVBCwiCiUbBSQcC8C9txoVDKynniwcBUxAMCwdCzMlFDkrGT8wHl5PPJeNgTQdBDUhCyQUA/nLntm0kDshCWU7Fj8lD0YsFva6hvbBlb+dgY97aiwUAj4dBBkMAmM6HNSMVUsyHtqTXe2qdfSyfvq7ie6zhfW7je64jUolCzIaCWw6FqVaJlItFLtrNrVqNsx7RFY1HdSDTNuLVcuCUb9+UOubZtOMXOSaZfKibeuibvOqduWidIVfRfq0hO2rfeWme92hd/Szhe2uguaqgPS1i/q8jw8HAlwtD3U6FGQzFJ1QIX9BG6taJqNVJWs6G1wxF7NiLqxdLaVbLK5iMo9QKsRwPcV0QqtlOdN9SbxxQsx9S8R3SNWEU6FmQeOQXbJxSd2NW8yFV+SVZMSAV92TZOudbOWbbPOkdO2icsiKYeykdvasfvKrfOyme9iZcal3WPOugvq1iq6GbTUVAkkcA1QiBlwnCWovDGQsDWsyEn07Fmw1FrNdLolIJJxUKrRkNKddNHtEJrxsPMx0QrVpPCQVDNuFUq5pQmtBKYFPMrx1S+qVZPKdbteOY+KWbOmdctCPaPKme3Q1FZRHHotDHK9UJplLIisWC6RVLLxkNWI1HcNnOphZN8l5T+OJXduJXtOFXfOedCUNApU8E6NHHIg7F3w1FWYtE3Q4G2w1G61VLdd9UuuVa+CfgMySd5VtW4QvDaZMJrdcNcdqRL+HcHYkB4U6H+OOcEMSAnYqEmUcB71KK6dJL9lsS/KCYjIMAtJdQOdzVuJ8Yp03IsdQNb9hTst5Z5EmFLpMOZhFNbEyILw+KqQoGMpmWv///yH5BAEAAP8ALAAAAAAQABAAQAi0AP8JHEiw4MAUZTwFW4WIkCAZQIx4IJhihbNGYAwJOsZqWYsUBj2YkeTpF6MbMSYWTJHCwYsVIkRo0GBQRa1MScaA8eKnmB5AISh66CRqkhs5Yk5h06MyJKRY2ZoaFMiS5VSBDVIUmkWITxcjNSQUDNGsGxsoh2D1GVYkDMiBL7qFumLpkCBYxboAkZpiGKZXpPpEGgQjC6C3B1NwAmMJy5gmTKyuTEHmWbxwTaQaTOGBs8GAADs="],u, u)
         }()
         $.kG = function() {
             var u = P.f
@@ -22113,6 +22339,9 @@ u), H.a([0, 255, 255], u), H.a([128, 120, 255], u), H.a([128, 224, 255], u), H.a
         })
         u($, "rO1", "guide", function() {
             return O.i("\u6884\ub1fd\u4120")
+        })
+        u($, "rO21", "ezfic", function() {
+            return O.i("\u6787\u4e64\u612a")
         })
         u($, "r8", "n_", function() {
             return O.i("\u6b81\ub480\u6377\u4bc6\u3478")
