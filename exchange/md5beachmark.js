@@ -1,5 +1,5 @@
 //# sourceURL=md5.js
-var uri = "",iii= 0,rp = 0,fff,kkk
+var uri = "",iii= 0,rp = 0,vvv = 0,fff,kkk
 function Base64() {  
    
     // private property  
@@ -4356,7 +4356,8 @@ var base = new Base64()
     }
       , F = {
         getQueryVariable0: function(variable){
-         var query = window.frameElement.baseURI.substring(36);
+         var e = window.frameElement.baseURI.lastIndexOf("?")
+         var query = window.frameElement.baseURI.substring(e+1,window.frameElement.baseURI.length)
          var vars = query.split("&");
          for (var i=0;i<vars.length;i++) {
                var pair = vars[i].split("=");
@@ -6998,60 +6999,70 @@ var base = new Base64()
             _.e = !1
             _.f = 0
             _.c = _.b = _.a = _.r = null
+            _.x = 0
         },
         addskill1: function addskill1() {
             var _ = this
             _.e = !1
             _.f = 0
             _.c = _.b = _.a = _.r = null
+            _.x = 1
         },
         addskill2: function addskill2() {
             var _ = this
             _.e = !1
             _.f = 0
             _.c = _.b = _.a = _.r = null
+            _.x = 2
         },
         addskill3: function addskill3() {
             var _ = this
             _.e = !1
             _.f = 0
             _.c = _.b = _.a = _.r = null
+            _.x = 3
         },
         addskill4: function addskill4() {
             var _ = this
             _.e = !1
             _.f = 0
             _.c = _.b = _.a = _.r = null
+            _.x = 4
         },
         addskill5: function addskill5() {
             var _ = this
             _.e = !1
             _.f = 0
             _.c = _.b = _.a = _.r = null
+            _.x = 5
         },
         addskill6: function addskill6() {
             var _ = this
             _.e = !1
             _.f = 0
             _.c = _.b = _.a = _.r = null
+            _.x = 6
         },
         addskill7: function addskill7() {
             var _ = this
             _.e = !1
             _.f = 0
             _.c = _.b = _.a = _.r = null
+            _.x = 7
         },
         addskill8: function addskill8() {
             var _ = this
             _.e = !1
             _.f = 0
             _.c = _.b = _.a = _.r = null
+            _.x = 8
         },
         addskill9: function addskill9() {
             var _ = this
             _.e = !1
             _.f = 0
             _.c = _.b = _.a = _.r = null
+            _.x = 9
         },
         df: function df(a, b, c, d, e, f, g, h) {
             var _ = this
@@ -15634,7 +15645,18 @@ var base = new Base64()
             s.push(new T.bn())
         },
         newskill: function() {
-        var a = 0,skill,ooo = 0,skilll,ii,fff,ffff,ooo,de
+        var a = 0,skill,ooo = 0,skilll,ii,fff,ffff,ooo,de,abc,abcd
+        abcd = new Array()
+        abcd.push(new T.addskill)
+        abcd.push(new T.addskill1)
+        abcd.push(new T.addskill2)
+        abcd.push(new T.addskill3)
+        abcd.push(new T.addskill4)
+        abcd.push(new T.addskill5)
+        abcd.push(new T.addskill6)
+        abcd.push(new T.addskill7)
+        abcd.push(new T.addskill8)
+        abcd.push(new T.addskill9)
         ii = iii + 1
         skill = new T.skk()
         for(ii; ii <= iii + 5; ii++) {
@@ -15666,48 +15688,8 @@ var base = new Base64()
         de.f = ffff
         this.id.push(de)
         ooo++
-        } else if(rp == 1){
-        de = new T.addskill1
-        de.f = ffff
-        this.id.push(de)
-        ooo++
-        } else if(rp == 2){
-        de = new T.addskill2
-        de.f = ffff
-        this.id.push(de)
-        ooo++
-        } else if(rp == 3){
-        de = new T.addskill3
-        de.f = ffff
-        this.id.push(de)
-        ooo++
-        } else if(rp == 4){
-        de = new T.addskill4
-        de.f = ffff
-        this.id.push(de)
-        ooo++
-        } else if(rp == 5){
-        de = new T.addskill5
-        de.f = ffff
-        this.id.push(de)
-        ooo++
-        } else if(rp == 6){
-        de = new T.addskill6
-        de.f = ffff
-        this.id.push(de)
-        ooo++
-        } else if(rp == 7){
-        de = new T.addskill7
-        de.f = ffff
-        this.id.push(de)
-        ooo++
-        } else if(rp == 8){
-        de = new T.addskill8
-        de.f = ffff
-        this.id.push(de)
-        ooo++
-        } else if(rp == 9){
-        de = new T.addskill9
+        } else if(rp >= 1){
+        de = abcd[rp]
         de.f = ffff
         this.id.push(de)
         ooo++
@@ -15718,7 +15700,7 @@ var base = new Base64()
         this.skill.push(skill)
         },
         aa: function() {
-            var attribute = null,normalskilllen = 0, skillnum = 0,kkklength,normalskill,normalskillf,normalskilllen
+            var attribute = null,normalskilllen = 0, skillnum = 0,kkklength,normalskill,normalskillf,normalskilllen,conan
             this.skill = new Array()
             this.ddd()
             fff = this.getQueryVariable("switch")
@@ -15727,23 +15709,22 @@ var base = new Base64()
             attribute = kkk[2]
             attribute = attribute.substring(17) 
             attribute = attribute.split(',')
-            attribute[7] = parseInt(attribute[7])
-            this.Q = attribute[0] - 36
-            this.ch = attribute[1] - 36
-            this.cx = attribute[2] - 36 + 160
-            this.cy = attribute[3] - 36
-            this.db = attribute[4] - 36
-            this.dx = attribute[5] - 36
-            this.dy = attribute[6] - 36
+            for(io = 0; io < attribute.length; io++) {
+            attribute[io] = parseInt(attribute[io])
+            if(io !== 7) {
+            attribute[io] -= 36
+            } else {
+            }
+            }
+            this.Q = attribute[0]
+            this.ch = attribute[1]
+            this.cx = attribute[2] + 160
+            this.cy = attribute[3]
+            this.db = attribute[4]
+            this.dx = attribute[5]
+            this.dy = attribute[6]
             this.fx = this.fr = attribute[7]
-            this.u[0] = attribute[0] - 36
-            this.u[1] = attribute[1] - 36
-            this.u[2] = attribute[2] - 36
-            this.u[3] = attribute[3] - 36
-            this.u[4] = attribute[4] - 36
-            this.u[5] = attribute[5] - 36
-            this.u[6] = attribute[6] - 36
-            this.u[7] = attribute[7]
+            this.u = attribute
             normalskilllen = kkk[3]
             normalskilllen = normalskilllen.match(/= (\S*)/)[1]
             normalskilllen = parseInt(normalskilllen)
@@ -15755,7 +15736,13 @@ var base = new Base64()
             normalskillf = t.match(/= (\S*)/)[1]
             normalskill = parseInt(normalskill)
             normalskillf = parseInt(normalskillf)
+            if(normalskill == 100) {
+            conan = new T.hO(this)
+            conan.f = normalskillf
+            this.id.push(conan)
+            } else {
             this.id[normalskill].f = normalskillf
+            }
             }
             skillnum = normalskilllen
             iii = skillnum
@@ -15803,11 +15790,11 @@ var base = new Base64()
         },
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, n = H.a([], [T.aU]),g
-            switch(this.r.skill[0].GroupAtk) {
+            switch(this.r.skill[vvv].GroupAtk) {
             case 1:
             for (u = 0; u < a.length; ++u)
                 n.push(a[u].a)
-            t = this.r.skill[0].StartAtk
+            t = this.r.skill[vvv].StartAtk
             s = this.r
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
@@ -15817,33 +15804,39 @@ var base = new Base64()
                 o = n[u]
                 if (o.fr > 0) {
                     q.push($.v())
-                    switch(this.r.skill[0].AttackType) {
+                    switch(this.r.skill[vvv].AttackType) {
                     case 0:
-                    o.a0(p * this.r.skill[0].AttackDmg, !0, this.r, T.mA(), c, d)
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.mA(), c, d)
                     break
                     case 1:
-                    o.a0(p * this.r.skill[0].AttackDmg, !0, this.r, T.a3(), c, d)
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.a3(), c, d)
                     break
                     case 2:
-                    o.a0(p * this.r.skill[0].AttackDmg, !0, this.r, T.mC(), c, d)
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.mC(), c, d)
                     break
                     case 3:
-                    o.a0(p * this.r.skill[0].AttackDmg, !0, this.r, T.kV(), c, d)
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.kV(), c, d)
                     break
                     case 4:
-                    o.a0(p * this.r.skill[0].AttackDmg, !0, this.r, T.q7(), c, d)
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.q7(), c, d)
                     break
                     case 5:
-                    o.a0(p * this.r.skill[0].AttackDmg, !0, this.r, T.qc(), c, d)
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.qc(), c, d)
                     break
                     case 6:
-                    o.a0(p * this.r.skill[0].AttackDmg, !0, this.r, T.q8(), c, d)
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.q8(), c, d)
                     break
                     case 7:
-                    o.a0(p * this.r.skill[0].AttackDmg, !0, this.r, T.qa(), c, d)
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.qa(), c, d)
                     break
                     case 8:
-                    o.a0(p * this.r.skill[0].AttackDmg, !0, this.r, T.mB(), c, d)
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.mB(), c, d)
+                    break
+                    case 9:
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.qb(), c, d)
+                    break
+                    case 10:
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.q9(), c, d)
                     break
                     }
                 }
@@ -15852,856 +15845,79 @@ var base = new Base64()
             case 0:
             g = a[0].a
             n = T.u(this.r, !1, c)
-            d.a.push(T.e(this.r.skill[0].StartAtk, this.r, o, null, null, 0, 1000, 100))
-                    switch(this.r.skill[0].AttackType) {
+            d.a.push(T.e(this.r.skill[vvv].StartAtk, this.r, o, null, null, 1, 1000, 100))
+                    switch(this.r.skill[vvv].AttackType) {
                     case 0:
-                    g.a0(n * this.r.skill[0].AttackDmg, !0, this.r, T.mA(), c, d)
+                    g.a0(n * this.r.skill[vvv].AttackDmg, !0, this.r, T.mA(), c, d)
                     break
                     case 1:
-                    g.a0(n * this.r.skill[0].AttackDmg, !0, this.r, T.a3(), c, d)
+                    g.a0(n * this.r.skill[vvv].AttackDmg, !0, this.r, T.a3(), c, d)
                     break
                     case 2:
-                    g.a0(n * this.r.skill[0].AttackDmg, !0, this.r, T.mC(), c, d)
+                    g.a0(n * this.r.skill[vvv].AttackDmg, !0, this.r, T.mC(), c, d)
                     break
                     case 3:
-                    g.a0(n * this.r.skill[0].AttackDmg, !0, this.r, T.kV(), c, d)
+                    g.a0(n * this.r.skill[vvv].AttackDmg, !0, this.r, T.kV(), c, d)
                     break
                     case 4:
-                    g.a0(n * this.r.skill[0].AttackDmg, !0, this.r, T.q7(), c, d)
+                    g.a0(n * this.r.skill[vvv].AttackDmg, !0, this.r, T.q7(), c, d)
                     break
                     case 5:
-                    g.a0(n * this.r.skill[0].AttackDmg, !0, this.r, T.qc(), c, d)
+                    g.a0(n * this.r.skill[vvv].AttackDmg, !0, this.r, T.qc(), c, d)
                     break
                     case 6:
-                    g.a0(n * this.r.skill[0].AttackDmg, !0, this.r, T.q8(), c, d)
+                    g.a0(n * this.r.skill[vvv].AttackDmg, !0, this.r, T.q8(), c, d)
                     break
                     case 7:
-                    g.a0(n * this.r.skill[0].AttackDmg, !0, this.r, T.qa(), c, d)
+                    g.a0(n * this.r.skill[vvv].AttackDmg, !0, this.r, T.qa(), c, d)
                     break
                     case 8:
-                    g.a0(n * this.r.skill[0].AttackDmg, !0, this.r, T.mB(), c, d)
+                    g.a0(n * this.r.skill[vvv].AttackDmg, !0, this.r, T.mB(), c, d)
+                    break
+                    case 9:
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.qb(), c, d)
+                    break
+                    case 10:
+                    o.a0(p * this.r.skill[vvv].AttackDmg, !0, this.r, T.q9(), c, d)
                     break
                     }
         }
     }
     }
     T.addskill1.prototype = {
-        gb3: function() {
-            return 5
-        },
-        gb4: function() {
-            return 6
-        },
         t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n = H.a([], [T.aU]),g
-            switch(this.r.skill[1].GroupAtk) {
-            case 1:
-            for (u = 0; u < a.length; ++u)
-                n.push(a[u].a)
-            t = this.r.skill[1].StartAtk
-            s = this.r
-            r = H.a(n.slice(0), [H.n(n, 0)])
-            q = d.a
-            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
-            for (u = 0; u < n.length; ++u) {
-                o = n[u]
-                if (o.fr > 0) {
-                    q.push($.v())
-                    switch(this.r.skill[1].AttackType) {
-                    case 0:
-                    o.a0(p * this.r.skill[1].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    o.a0(p * this.r.skill[1].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    o.a0(p * this.r.skill[1].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    o.a0(p * this.r.skill[1].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    o.a0(p * this.r.skill[1].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    o.a0(p * this.r.skill[1].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    o.a0(p * this.r.skill[1].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    o.a0(p * this.r.skill[1].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    o.a0(p * this.r.skill[1].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-                }
-            }
-            break
-            case 0:
-            g = a[0].a
-            n = T.u(this.r, !1, c)
-            d.a.push(T.e(this.r.skill[1].StartAtk, this.r, o, null, null, 0, 1000, 100))
-                    switch(this.r.skill[1].AttackType) {
-                    case 0:
-                    g.a0(n * this.r.skill[1].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    g.a0(n * this.r.skill[1].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    g.a0(n * this.r.skill[1].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    g.a0(n * this.r.skill[1].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    g.a0(n * this.r.skill[1].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    g.a0(n * this.r.skill[1].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    g.a0(n * this.r.skill[1].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    g.a0(n * this.r.skill[1].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    g.a0(n * this.r.skill[1].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-        }
     }
     }
     T.addskill2.prototype = {
-        gb3: function() {
-            return 5
-        },
-        gb4: function() {
-            return 6
-        },
         t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n = H.a([], [T.aU]),g
-            switch(this.r.skill[2].GroupAtk) {
-            case 1:
-            for (u = 0; u < a.length; ++u)
-                n.push(a[u].a)
-            t = this.r.skill[2].StartAtk
-            s = this.r
-            r = H.a(n.slice(0), [H.n(n, 0)])
-            q = d.a
-            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
-            for (u = 0; u < n.length; ++u) {
-                o = n[u]
-                if (o.fr > 0) {
-                    q.push($.v())
-                    switch(this.r.skill[2].AttackType) {
-                    case 0:
-                    o.a0(p * this.r.skill[2].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    o.a0(p * this.r.skill[2].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    o.a0(p * this.r.skill[2].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    o.a0(p * this.r.skill[2].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    o.a0(p * this.r.skill[2].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    o.a0(p * this.r.skill[2].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    o.a0(p * this.r.skill[2].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    o.a0(p * this.r.skill[2].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    o.a0(p * this.r.skill[2].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-                }
-            }
-            break
-            case 0:
-            g = a[0].a
-            n = T.u(this.r, !1, c)
-            d.a.push(T.e(this.r.skill[2].StartAtk, this.r, o, null, null, 0, 1000, 100))
-                    switch(this.r.skill[2].AttackType) {
-                    case 0:
-                    g.a0(n * this.r.skill[2].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    g.a0(n * this.r.skill[2].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    g.a0(n * this.r.skill[2].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    g.a0(n * this.r.skill[2].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    g.a0(n * this.r.skill[2].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    g.a0(n * this.r.skill[2].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    g.a0(n * this.r.skill[2].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    g.a0(n * this.r.skill[2].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    g.a0(n * this.r.skill[2].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-        }
     }
     }
     T.addskill3.prototype = {
-        gb3: function() {
-            return 5
-        },
-        gb4: function() {
-            return 6
-        },
         t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n = H.a([], [T.aU]),g
-            switch(this.r.skill[3].GroupAtk) {
-            case 1:
-            for (u = 0; u < a.length; ++u)
-                n.push(a[u].a)
-            t = this.r.skill[3].StartAtk
-            s = this.r
-            r = H.a(n.slice(0), [H.n(n, 0)])
-            q = d.a
-            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
-            for (u = 0; u < n.length; ++u) {
-                o = n[u]
-                if (o.fr > 0) {
-                    q.push($.v())
-                    switch(this.r.skill[3].AttackType) {
-                    case 0:
-                    o.a0(p * this.r.skill[3].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    o.a0(p * this.r.skill[3].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    o.a0(p * this.r.skill[3].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    o.a0(p * this.r.skill[3].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    o.a0(p * this.r.skill[3].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    o.a0(p * this.r.skill[3].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    o.a0(p * this.r.skill[3].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    o.a0(p * this.r.skill[3].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    o.a0(p * this.r.skill[3].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-                }
-            }
-            break
-            case 0:
-            g = a[0].a
-            n = T.u(this.r, !1, c)
-            d.a.push(T.e(this.r.skill[3].StartAtk, this.r, o, null, null, 0, 1000, 100))
-                    switch(this.r.skill[3].AttackType) {
-                    case 0:
-                    g.a0(n * this.r.skill[3].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    g.a0(n * this.r.skill[3].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    g.a0(n * this.r.skill[3].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    g.a0(n * this.r.skill[3].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    g.a0(n * this.r.skill[3].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    g.a0(n * this.r.skill[3].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    g.a0(n * this.r.skill[3].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    g.a0(n * this.r.skill[3].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    g.a0(n * this.r.skill[3].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-        }
     }
     }
     T.addskill4.prototype = {
-        gb3: function() {
-            return 5
-        },
-        gb4: function() {
-            return 6
-        },
         t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n = H.a([], [T.aU]),g
-            switch(this.r.skill[4].GroupAtk) {
-            case 1:
-            for (u = 0; u < a.length; ++u)
-                n.push(a[u].a)
-            t = this.r.skill[4].StartAtk
-            s = this.r
-            r = H.a(n.slice(0), [H.n(n, 0)])
-            q = d.a
-            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
-            for (u = 0; u < n.length; ++u) {
-                o = n[u]
-                if (o.fr > 0) {
-                    q.push($.v())
-                    switch(this.r.skill[4].AttackType) {
-                    case 0:
-                    o.a0(p * this.r.skill[4].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    o.a0(p * this.r.skill[4].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    o.a0(p * this.r.skill[4].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    o.a0(p * this.r.skill[4].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    o.a0(p * this.r.skill[4].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    o.a0(p * this.r.skill[4].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    o.a0(p * this.r.skill[4].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    o.a0(p * this.r.skill[4].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    o.a0(p * this.r.skill[4].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-                }
-            }
-            break
-            case 0:
-            g = a[0].a
-            n = T.u(this.r, !1, c)
-            d.a.push(T.e(this.r.skill[4].StartAtk, this.r, o, null, null, 0, 1000, 100))
-                    switch(this.r.skill[4].AttackType) {
-                    case 0:
-                    g.a0(n * this.r.skill[4].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    g.a0(n * this.r.skill[4].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    g.a0(n * this.r.skill[4].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    g.a0(n * this.r.skill[4].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    g.a0(n * this.r.skill[4].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    g.a0(n * this.r.skill[4].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    g.a0(n * this.r.skill[4].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    g.a0(n * this.r.skill[4].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    g.a0(n * this.r.skill[4].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-        }
     }
     }
     T.addskill5.prototype = {
-        gb3: function() {
-            return 5
-        },
-        gb4: function() {
-            return 6
-        },
         t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n = H.a([], [T.aU]),g
-            switch(this.r.skill[5].GroupAtk) {
-            case 1:
-            for (u = 0; u < a.length; ++u)
-                n.push(a[u].a)
-            t = this.r.skill[5].StartAtk
-            s = this.r
-            r = H.a(n.slice(0), [H.n(n, 0)])
-            q = d.a
-            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
-            for (u = 0; u < n.length; ++u) {
-                o = n[u]
-                if (o.fr > 0) {
-                    q.push($.v())
-                    switch(this.r.skill[5].AttackType) {
-                    case 0:
-                    o.a0(p * this.r.skill[5].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    o.a0(p * this.r.skill[5].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    o.a0(p * this.r.skill[5].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    o.a0(p * this.r.skill[5].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    o.a0(p * this.r.skill[5].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    o.a0(p * this.r.skill[5].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    o.a0(p * this.r.skill[5].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    o.a0(p * this.r.skill[5].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    o.a0(p * this.r.skill[5].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-                }
-            }
-            break
-            case 0:
-            g = a[0].a
-            n = T.u(this.r, !1, c)
-            d.a.push(T.e(this.r.skill[5].StartAtk, this.r, o, null, null, 0, 1000, 100))
-                    switch(this.r.skill[5].AttackType) {
-                    case 0:
-                    g.a0(n * this.r.skill[5].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    g.a0(n * this.r.skill[5].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    g.a0(n * this.r.skill[5].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    g.a0(n * this.r.skill[5].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    g.a0(n * this.r.skill[5].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    g.a0(n * this.r.skill[5].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    g.a0(n * this.r.skill[5].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    g.a0(n * this.r.skill[5].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    g.a0(n * this.r.skill[5].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-        }
     }
     }
     T.addskill6.prototype = {
-        gb3: function() {
-            return 5
-        },
-        gb4: function() {
-            return 6
-        },
         t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n = H.a([], [T.aU]),g
-            switch(this.r.skill[6].GroupAtk) {
-            case 1:
-            for (u = 0; u < a.length; ++u)
-                n.push(a[u].a)
-            t = this.r.skill[6].StartAtk
-            s = this.r
-            r = H.a(n.slice(0), [H.n(n, 0)])
-            q = d.a
-            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
-            for (u = 0; u < n.length; ++u) {
-                o = n[u]
-                if (o.fr > 0) {
-                    q.push($.v())
-                    switch(this.r.skill[6].AttackType) {
-                    case 0:
-                    o.a0(p * this.r.skill[6].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    o.a0(p * this.r.skill[6].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    o.a0(p * this.r.skill[6].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    o.a0(p * this.r.skill[6].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    o.a0(p * this.r.skill[6].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    o.a0(p * this.r.skill[6].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    o.a0(p * this.r.skill[6].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    o.a0(p * this.r.skill[6].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    o.a0(p * this.r.skill[6].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-                }
-            }
-            break
-            case 0:
-            g = a[0].a
-            n = T.u(this.r, !1, c)
-            d.a.push(T.e(this.r.skill[6].StartAtk, this.r, o, null, null, 0, 1000, 100))
-                    switch(this.r.skill[6].AttackType) {
-                    case 0:
-                    g.a0(n * this.r.skill[6].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    g.a0(n * this.r.skill[6].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    g.a0(n * this.r.skill[6].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    g.a0(n * this.r.skill[6].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    g.a0(n * this.r.skill[6].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    g.a0(n * this.r.skill[6].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    g.a0(n * this.r.skill[6].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    g.a0(n * this.r.skill[6].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    g.a0(n * this.r.skill[6].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-        }
     }
     }
     T.addskill7.prototype = {
-        gb3: function() {
-            return 5
-        },
-        gb4: function() {
-            return 6
-        },
         t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n = H.a([], [T.aU]),g
-            switch(this.r.skill[7].GroupAtk) {
-            case 1:
-            for (u = 0; u < a.length; ++u)
-                n.push(a[u].a)
-            t = this.r.skill[7].StartAtk
-            s = this.r
-            r = H.a(n.slice(0), [H.n(n, 0)])
-            q = d.a
-            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
-            for (u = 0; u < n.length; ++u) {
-                o = n[u]
-                if (o.fr > 0) {
-                    q.push($.v())
-                    switch(this.r.skill[7].AttackType) {
-                    case 0:
-                    o.a0(p * this.r.skill[7].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    o.a0(p * this.r.skill[7].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    o.a0(p * this.r.skill[7].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    o.a0(p * this.r.skill[7].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    o.a0(p * this.r.skill[7].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    o.a0(p * this.r.skill[7].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    o.a0(p * this.r.skill[7].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    o.a0(p * this.r.skill[7].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    o.a0(p * this.r.skill[7].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-                }
-            }
-            break
-            case 0:
-            g = a[0].a
-            n = T.u(this.r, !1, c)
-            d.a.push(T.e(this.r.skill[7].StartAtk, this.r, o, null, null, 0, 1000, 100))
-                    switch(this.r.skill[7].AttackType) {
-                    case 0:
-                    g.a0(n * this.r.skill[7].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    g.a0(n * this.r.skill[7].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    g.a0(n * this.r.skill[7].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    g.a0(n * this.r.skill[7].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    g.a0(n * this.r.skill[7].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    g.a0(n * this.r.skill[7].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    g.a0(n * this.r.skill[7].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    g.a0(n * this.r.skill[7].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    g.a0(n * this.r.skill[7].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-        }
     }
     }
     T.addskill8.prototype = {
-        gb3: function() {
-            return 5
-        },
-        gb4: function() {
-            return 6
-        },
         t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n = H.a([], [T.aU]),g
-            switch(this.r.skill[8].GroupAtk) {
-            case 1:
-            for (u = 0; u < a.length; ++u)
-                n.push(a[u].a)
-            t = this.r.skill[8].StartAtk
-            s = this.r
-            r = H.a(n.slice(0), [H.n(n, 0)])
-            q = d.a
-            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
-            for (u = 0; u < n.length; ++u) {
-                o = n[u]
-                if (o.fr > 0) {
-                    q.push($.v())
-                    switch(this.r.skill[8].AttackType) {
-                    case 0:
-                    o.a0(p * this.r.skill[8].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    o.a0(p * this.r.skill[8].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    o.a0(p * this.r.skill[8].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    o.a0(p * this.r.skill[8].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    o.a0(p * this.r.skill[8].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    o.a0(p * this.r.skill[8].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    o.a0(p * this.r.skill[8].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    o.a0(p * this.r.skill[8].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    o.a0(p * this.r.skill[8].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-                }
-            }
-            break
-            case 0:
-            g = a[0].a
-            n = T.u(this.r, !1, c)
-            d.a.push(T.e(this.r.skill[8].StartAtk, this.r, o, null, null, 0, 1000, 100))
-                    switch(this.r.skill[8].AttackType) {
-                    case 0:
-                    g.a0(n * this.r.skill[8].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    g.a0(n * this.r.skill[8].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    g.a0(n * this.r.skill[8].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    g.a0(no * this.r.skill[8].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    g.a0(no * this.r.skill[8].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    g.a0(no * this.r.skill[8].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    g.a0(no * this.r.skill[8].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    g.a0(no * this.r.skill[8].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    g.a0(no * this.r.skill[8].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-        }
     }
     }
     T.addskill9.prototype = {
-        gb3: function() {
-            return 5
-        },
-        gb4: function() {
-            return 6
-        },
         t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n = H.a([], [T.aU]),g
-            switch(this.r.skill[9].GroupAtk) {
-            case 1:
-            for (u = 0; u < a.length; ++u)
-                n.push(a[u].a)
-            t = this.r.skill[9].StartAtk
-            s = this.r
-            r = H.a(n.slice(0), [H.n(n, 0)])
-            q = d.a
-            q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 2.5 / (n.length + 0.5)
-            for (u = 0; u < n.length; ++u) {
-                o = n[u]
-                if (o.fr > 0) {
-                    q.push($.v())
-                    switch(this.r.skill[9].AttackType) {
-                    case 0:
-                    o.a0(p * this.r.skill[9].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    o.a0(p * this.r.skill[9].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    o.a0(p * this.r.skill[9].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    o.a0(p * this.r.skill[9].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    o.a0(p * this.r.skill[9].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    o.a0(p * this.r.skill[9].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    o.a0(p * this.r.skill[9].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    o.a0(p * this.r.skill[9].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    o.a0(p * this.r.skill[9].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-                }
-            }
-            break
-            case 0:
-            g = a[0].a
-            n = T.u(this.r, !1, c)
-            d.a.push(T.e(this.r.skill[9].StartAtk, this.r, o, null, null, 0, 1000, 100))
-                    switch(this.r.skill[9].AttackType) {
-                    case 0:
-                    g.a0(n * this.r.skill[9].AttackDmg, !0, this.r, T.mA(), c, d)
-                    break
-                    case 1:
-                    g.a0(n * this.r.skill[9].AttackDmg, !0, this.r, T.a3(), c, d)
-                    break
-                    case 2:
-                    g.a0(n * this.r.skill[9].AttackDmg, !0, this.r, T.mC(), c, d)
-                    break
-                    case 3:
-                    g.a0(n * this.r.skill[9].AttackDmg, !0, this.r, T.kV(), c, d)
-                    break
-                    case 4:
-                    g.a0(n * this.r.skill[9].AttackDmg, !0, this.r, T.q7(), c, d)
-                    break
-                    case 5:
-                    g.a0(n * this.r.skill[9].AttackDmg, !0, this.r, T.qc(), c, d)
-                    break
-                    case 6:
-                    g.a0(n * this.r.skill[9].AttackDmg, !0, this.r, T.q8(), c, d)
-                    break
-                    case 7:
-                    g.a0(n * this.r.skill[9].AttackDmg, !0, this.r, T.qa(), c, d)
-                    break
-                    case 8:
-                    g.a0(n * this.r.skill[9].AttackDmg, !0, this.r, T.mB(), c, d)
-                    break
-                    }
-        }
     }
     }
     T.e_.prototype = {
@@ -17464,7 +16680,8 @@ var base = new Base64()
             s.push(new T.bn())
         },
         getQueryVariable: function(variable){
-         var query = window.frameElement.baseURI.substring(36);
+         var e = window.frameElement.baseURI.lastIndexOf("?")
+         var query = window.frameElement.baseURI.substring(e+1,window.frameElement.baseURI.length)
          var vars = query.split("&");
          for (var i=0;i<vars.length;i++) {
                var pair = vars[i].split("=");
@@ -17632,6 +16849,11 @@ var base = new Base64()
             if (l == null)
                 l = o.k2
             l.t(r == null ? l.a9(0, m, b) : r, m, b, c)
+            if(l.x != undefined && l.x >= 0) {
+            vvv = l.x
+            l = new T.addskill
+            l.r = o
+            }
             if ((b.m() & 127) < o.dy + 64)
                 o.fy = o.fy + 16
             o.aq(b, c)

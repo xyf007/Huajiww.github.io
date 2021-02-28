@@ -513,7 +513,7 @@ div.menuopen {
     }
     for (var i in navigator.languages){
       if (navigator.languages[i].substring(0,2)=="zh") {
-        lanfile = "lang/zh.json";
+        lanfile = "lang/zhw.json";
         break;
       }
     }
@@ -526,15 +526,10 @@ div.menuopen {
     req0 = new XMLHttpRequest();
     req0.open("GET", lanfile);
     req0.send();
-    if(lanfile == "lang/zhw.json") {
+
     req1 = new XMLHttpRequest();
     req1.open("GET", "md5beachmark.js");
     req1.send();
-    } else {
-    req1 = new XMLHttpRequest();
-    req1.open("GET", "md5.js");
-    req1.send();
-    }
 
     req2 = new XMLHttpRequest();
     req2.open("GET", "md5.css");
