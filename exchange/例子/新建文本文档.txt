@@ -1,0 +1,23 @@
+Boss_Name = "RP怪"
+Boss_Icon = "data:image/gif;base64,R0lGODlhEAAQAMIDAAAAAEB2/4Kl/////////////////////yH5BAEKAAQALAAAAAAQABAAAANISLrQsJC1MVwkLgSqLW6bQFFi4ACjIGxDoI7gqHFsO9UsXgFuPXIr0Or3691kHGSMxuRMSMPWi3IK/UqeTM7UuDio3YskDEkAADs="
+Boss_Attribute = 98,98,98,98,98,98,99,399
+NormalSkill = 5
+Boss_SkillProficiency0 = 0
+Boss_SkillProficiency1 = 0
+Boss_SkillProficiency2 = 0
+Boss_SkillProficiency3 = 0
+Boss_SkillProficiency4 = 0
+>>>New - Skill<<<
+StartAtk = "[0]发起[运气攻击]"
+GroupAtk = 1
+AttackType = 4
+AttackDmg = 1.2
+Proficiency = 40
+>>>New - Skill<<<
+StartAtk = "[0]发起[巡洋舰攻击]"
+GroupAtk = 1
+AttackType = 5
+AttackDmg = 1.2
+Proficiency = 40
+
+https://huajiww.github.io/exchange/?switch=Qm9zc19OYW1lID0gIlJQ5oCqIgpCb3NzX0ljb24gPSAiZGF0YTppbWFnZS9naWY7YmFzZTY0LFIwbEdPRGxoRUFBUUFNSURBQUFBQUVCMi80S2wvLy8vLy8vLy8vLy8vLy8vLy8vLy95SDVCQUVLQUFRQUxBQUFBQUFRQUJBQUFBTklTTHJRc0pDMU1Wd2tMZ1NxTFc2YlFGRmk0QUNqSUd4RG9JN2dxSEZzTzlVc1hnRnVQWElyME9yMzY5MWtIR1NNeHVSTVNNUFdpM0lLL1VxZVRNN1V1RGlvM1lza0RFa0FBRHM9IgpCb3NzX0F0dHJpYnV0ZSA9IDk4LDk4LDk4LDk4LDk4LDk4LDk5LDM5OQpOb3JtYWxTa2lsbCA9IDUKQm9zc19Ta2lsbFByb2ZpY2llbmN5MCA9IDAKQm9zc19Ta2lsbFByb2ZpY2llbmN5MSA9IDAKQm9zc19Ta2lsbFByb2ZpY2llbmN5MiA9IDAKQm9zc19Ta2lsbFByb2ZpY2llbmN5MyA9IDAKQm9zc19Ta2lsbFByb2ZpY2llbmN5NCA9IDAKPj4+TmV3IC0gU2tpbGw8PDwKU3RhcnRBdGsgPSAiWzBd5Y+R6LW3W+i/kOawlOaUu+WHu10iCkdyb3VwQXRrID0gMQpBdHRhY2tUeXBlID0gNApBdHRhY2tEbWcgPSAxLjIKUHJvZmljaWVuY3kgPSA0MAo+Pj5OZXcgLSBTa2lsbDw8PApTdGFydEF0ayA9ICJbMF3lj5Hotbdb5beh5rSL6Iiw5pS75Ye7XSIKR3JvdXBBdGsgPSAxCkF0dGFja1R5cGUgPSA1CkF0dGFja0RtZyA9IDEuMgpQcm9maWNpZW5jeSA9IDQw&l=lang%2Fzhw.json
