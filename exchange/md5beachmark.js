@@ -1,5 +1,20 @@
 //# sourceURL=md5.js
 var uri = "",iii= 0,rp = 0,vvv = 0,fff,kkk
+        function getQueryVariable(variable){
+         var e = window.frameElement.baseURI.lastIndexOf("?")
+         var query = window.frameElement.baseURI.substring(e+1,window.frameElement.baseURI.length)
+         var vars = query.split("&");
+         for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair.length - 2 == 2) {
+               pair[1] += "=="
+               } else if(pair.length - 2 == 1){
+               pair[1] += "="
+               }
+               if(pair[0] == variable){return pair[1];}
+         }
+         return(false);
+         }
 function Base64() {  
    
     // private property  
@@ -12116,7 +12131,7 @@ var base = new Base64()
                 n.x = s[0]
         },
         M: function() {
-            var u = 0, t = P.a8(T.W), s, r = this, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c, b, a, a0, a1
+            var u = 0, t = P.a8(T.W), s, r = this, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c, b, a, a0, a1,fff,uri,kkk
             var $async$M = P.a9(function(a2, a3) {
                 if (a2 === 1)
                     return P.a5(a3, t)
@@ -12145,9 +12160,24 @@ var base = new Base64()
                             u = 4
                             break
                         }
-                        if (p.length === 1 && !r.c)
-                            k = H.a([[p[0], H.a(["" + r.e++, o], n)], [H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n)]], m)
-                        else {
+                        if (p.length === 1 && !r.c) {
+                       fff = getQueryVariable("friend")
+                       fff = parseInt(fff)
+                           switch(fff) {
+                           case 0:
+                           k = H.a([[p[0], H.a(["" + r.e++, o], n)], [H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n)]], m)
+                           break                         
+                           case 1:
+                           k = H.a([[p[0], H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n)], [H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n)]], m)
+                           break
+                           case 2:
+                           k = H.a([[p[0], H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n)], [H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n)]], m)
+                           break
+                           case 3:
+                           k = H.a([[p[0], H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n)], [H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n), H.a(["" + r.e++, o], n)]], m)
+                           break
+                           }      
+                        } else {
                             j = []
                             k = H.a([p, j], m)
                             for (i = 0; i < p.length; ++i)
